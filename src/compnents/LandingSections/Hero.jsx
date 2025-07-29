@@ -20,7 +20,7 @@ export default function Hero() {
 
       {/* Content container */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center w-full ">
           {/* Left content */}
           <div className="text-white animate-fade-in py-12">
             <div className="space-y-4">
@@ -41,7 +41,7 @@ export default function Hero() {
             
             <div className="pt-4 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
               <button className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 active:scale-95">
-                <span className="relative z-10">Join the waitlist</span>
+                <span className="relative z-10 text-white">Join the waitlist</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
@@ -57,7 +57,7 @@ export default function Hero() {
               <img 
                 src="/Mockup.png" 
                 alt="Finc mobile app mockup" 
-                className="h-full  pt-10 w-auto object-contain drop-shadow-2xl"
+                className="h-full  pt-40 w-auto object-contain drop-shadow-2xl"
                 style={{ maxHeight: '100vh' }}
               />
               {/* Optional glow effect behind the image */}

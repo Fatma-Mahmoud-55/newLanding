@@ -19,7 +19,7 @@ export default function Hero() {
       </div>
 
       {/* Content container */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 md:pt-0 pt-20 h-full flex items-center">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full ">
           {/* Left content */}
           <div className="text-white animate-fade-in py-12">

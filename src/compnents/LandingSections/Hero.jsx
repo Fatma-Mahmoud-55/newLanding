@@ -19,10 +19,10 @@ export default function Hero() {
       </div>
 
       {/* Content container */}
-      <div className="relative z-10   px-4 sm:px-6 lg:px-8 md:pt-0 pt-20 h-full flex justify-end items-end">
+      <div className="relative z-10   px-4 sm:px-6 lg:px-8 md:pt-0 pt-32 h-full flex justify-end items-end">
         <div className="grid lg:grid-cols-2 items-end w-full ">
           {/* Left content */}
-                <div className="text-white animate-fade-in flex flex-col justify-center pb-20 lg:justify-start text-center lg:text-left">
+                <div className="text-white animate-fade-in flex flex-col justify-center lg:pb-20 pb-5 lg:justify-start text-center lg:text-left">
             <div className="space-y-4 mb-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="block animate-slide-in-left">Invest smarter.</span>

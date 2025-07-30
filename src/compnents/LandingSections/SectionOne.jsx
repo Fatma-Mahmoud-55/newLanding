@@ -19,7 +19,7 @@ export default function SectionOne() {
   }, []);
 
   return (
-    <section className="min-h-screen pt-32 relative overflow-hidden w-full">
+    <section className="min-h-screen md:pt-32 pt-5 relative overflow-hidden w-full">
       {/* Section Title */}
       <div className="w-full" data-aos="fade-up" data-aos-delay="200">
         <SectionTitle

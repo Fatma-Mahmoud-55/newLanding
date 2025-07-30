@@ -22,7 +22,7 @@ export default function SectionTitle({ subTitle, title, className = '' }) {
       
       {/* Main title with slide-in animation */}
       {title && (
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight animate-fadeIn">
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight animate-fadeIn">
           {title}
         </h1>
       )}

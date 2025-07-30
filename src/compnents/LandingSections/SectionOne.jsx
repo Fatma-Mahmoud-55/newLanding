@@ -19,7 +19,7 @@ export default function SectionOne() {
   }, []);
 
   return (
-    <section className="min-h-screen md:pt-32 pt-10 relative overflow-hidden w-full">
+    <section className="min-h-screen md:pt-32 pt-10 px-4 relative overflow-hidden w-full">
       {/* Section Title */}
       <div className="w-full" data-aos="fade-up" data-aos-delay="200">
         <SectionTitle
@@ -28,7 +28,7 @@ export default function SectionOne() {
         />
       </div>
       <div className="w-full mx-auto relative md:pl-12 pl-0 z-10">
-        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-7 items-center min-h-screen py-10">
+        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-center min-h-screen py-10">
           {/* Left Content */}
           <div className="space-y-1 md:pl-32 pl-0 flex flex-col justify-start">
             {/* Subheading */}

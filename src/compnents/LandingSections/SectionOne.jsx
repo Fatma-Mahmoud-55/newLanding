@@ -28,7 +28,7 @@ export default function SectionOne() {
         />
       </div>
       <div className="w-full mx-auto relative md:pl-12 pl-0 z-10">
-        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-10 items-center min-h-screen py-10">
+        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-7 items-center min-h-screen py-10">
           {/* Left Content */}
           <div className="space-y-1 md:pl-32 pl-0 flex flex-col justify-start">
             {/* Subheading */}
@@ -49,7 +49,7 @@ export default function SectionOne() {
             {/* Hand holding phone animation wrapper */}
             <div className="w-full h-full max-w-lg lg:max-w-none lg:pr-0">
               {/* Image container - positioned to extend to right border */}
-              <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] -lg:translate-x-6">
+              <div className="relative h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] -lg:translate-x-6">
                 <Image
                   src="/sectionOneImg.png"
                   alt="Hand holding phone with finc app"

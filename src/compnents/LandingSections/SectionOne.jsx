@@ -12,16 +12,16 @@ export default function SectionOne() {
     setIsVisible(true);
   }, []);
 
+
   return (
     <section className="min-h-screen pt-32 relative overflow-hidden w-full"> 
       {/* Small text above main heading */}
+
       <div className="w-full">
         <SectionTitle 
           subTitle="IT WASN'T YOUR FAULT — UNTIL NOW" 
           title="You were never the problem. The system was." 
-          className={`transition-all duration-1000 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
+        
         />
       </div>
 

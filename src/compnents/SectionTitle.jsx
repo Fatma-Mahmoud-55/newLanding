@@ -1,8 +1,18 @@
-import React from 'react';
-
+"use client"
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function SectionTitle({ subTitle, title, className = '' }) {
+    useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }, []);
   return (
-    <div className={`max-w-4xl mx-auto text-center ${className}`}>
+    <div className={`max-w-4xl mx-auto text-center `} data-aos="fade-up">
       {/* Subtitle with fade-in animation */}
       {subTitle && (
         <h3 className="text-sm md:text-base font-medium tracking-wider uppercase text-[#6B137F] mb-3 md:mb-4 animate-fadeIn">
@@ -17,7 +27,7 @@ export default function SectionTitle({ subTitle, title, className = '' }) {
         </h1>
       )}
       
-      <style jsx global>{`
+      {/* <style jsx global>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -31,7 +41,7 @@ export default function SectionTitle({ subTitle, title, className = '' }) {
         .animate-fadeIn {
           animation: fadeInUp 1s ease-out forwards;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

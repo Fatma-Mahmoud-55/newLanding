@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #2E0D47, #4C1D95, #7C3AED)' }}>
+    <div className="relative min-h-screen overflow-hidden border-b lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]" style={{ background: 'linear-gradient(to bottom right, #2E0D47, #4C1D95, #7C3AED)' }}>
       {/* Animated background elements */}
       <div className="absolute inset-0">
         {/* Main gradient overlay */}
@@ -19,12 +19,12 @@ export default function Hero() {
       </div>
 
       {/* Content container */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 md:pt-0 pt-20 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full ">
+      <div className="relative z-10   px-4 sm:px-6 lg:px-8 md:pt-0 pt-20 h-full flex justify-end items-end">
+        <div className="grid lg:grid-cols-2 items-end w-full ">
           {/* Left content */}
-          <div className="text-white animate-fade-in py-12">
-            <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                <div className="text-white animate-fade-in flex flex-col justify-center pb-20 lg:justify-start text-center lg:text-left">
+            <div className="space-y-4 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="block animate-slide-in-left">Invest smarter.</span>
                 <span className="block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Stress less.</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-300 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
@@ -33,31 +33,31 @@ export default function Hero() {
               </h1>
             </div>
             
-            <p className="text-lg sm:text-xl text-purple-100 max-w-2xl leading-relaxed animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
+            <p className="text-base sm:text-lg md:text-xl text-purple-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
               You don't need to be an expert to build wealth. 
               With Egypt's first AI-powered investing - finc makes growing 
               your money simple, easy and worry-free.
             </p>
             
-            <div className="pt-4 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 active:scale-95">
+            <div className="animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
+              <button className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 active:scale-95 mx-auto lg:mx-0 block lg:inline-block">
                 <span className="relative z-10 text-white">Join the waitlist</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
-              <p className="text-sm text-purple-200 mt-4 animate-fade-in" style={{ animationDelay: '1s' }}>
+              <p className="text-xs sm:text-sm text-purple-200 mt-4 animate-fade-in text-center lg:text-left" style={{ animationDelay: '1s' }}>
                 Early access. Limited spots. Your future's waiting.
               </p>
             </div>
           </div>
           
           {/* Right content - mobile mockup image */}
-          <div className="hidden lg:flex justify-center items-center animate-slide-in-right h-full" style={{ animationDelay: '0.5s' }}>
-            <div className="relative h-full w-full flex items-center justify-center">
+          <div className="flex justify-center items-center animate-slide-in-right h-full" style={{ animationDelay: '0.5s' }}>
+            <div className="relative h-full lg:w-full md:w-[50%] w-[70%] !pb-0 flex items-end justify-center">
               <img 
                 src="/Mockup.png" 
                 alt="Finc mobile app mockup" 
-                className="h-full  pt-40 w-auto object-contain drop-shadow-2xl"
+                className="h-full  lg:pt-40 pt-0 w-auto object-contain drop-shadow-2xl"
                 style={{ maxHeight: '100vh' }}
               />
               {/* Optional glow effect behind the image */}

@@ -19,9 +19,9 @@ export default function SectionOne() {
   }, []);
 
   return (
-    <section className="min-h-screen md:pt-32 pt-10 px-4 relative overflow-hidden w-full">
+    <section className="min-h-screen md:pt-32 pt-10 relative overflow-hidden w-full">
       {/* Section Title */}
-      <div className="w-full" data-aos="fade-up" data-aos-delay="200">
+      <div className="w-full px-4 " data-aos="fade-up" data-aos-delay="200">
         <SectionTitle
           subTitle="IT WASN'T YOUR FAULT — UNTIL NOW"
           title="You were never the problem. The system was."
@@ -30,7 +30,7 @@ export default function SectionOne() {
       <div className="w-full mx-auto relative md:pl-12 pl-0 z-10">
         <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-center min-h-screen py-10">
           {/* Left Content */}
-          <div className="space-y-1 md:pl-32 pl-0 flex flex-col justify-start">
+          <div className="space-y-1 px-4  md:pl-32  flex flex-col justify-start">
             {/* Subheading */}
             <div data-aos="fade-right" data-aos-delay="400">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight text-center lg:text-left">

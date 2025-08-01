@@ -208,8 +208,8 @@ const SectionTwo = () => {
         }`}
       >
         <SectionTitle
-          subTitle="IT WASN'T YOUR FAULT — UNTIL NOW"
-          title="You were never the problem. The system was."
+          subTitle="INVESTING THE SMART, STRESS-FREE WAY"
+          title="Let your money work - automatically."
         />
       </div>
       

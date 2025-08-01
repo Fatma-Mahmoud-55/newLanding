@@ -122,7 +122,7 @@ const SectionFive = () => {
                title="FAQ - got questions?"
              />
 
-      <div className="space-y-2 mt-5">
+      <div className="space-y-2 mt-10 ">
         {faqData.map((item, index) => (
           <div
             key={index}

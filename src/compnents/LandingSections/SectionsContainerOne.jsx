@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import SectionOne from './SectionOne'; // Added missing 'from' keyword
+import SectionTwo from './SectionTwo'; // Added missing 'from' keyword
 
 export default function SectionsContainerOne() {
   return (
@@ -8,7 +9,7 @@ export default function SectionsContainerOne() {
       <div className='relative'>
         <div className="absolute w-32 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
         <SectionOne/>
-        {/* <SectionOne/> */}
+        <SectionTwo/>
       </div>
       <style jsx>{`
         @keyframes float {

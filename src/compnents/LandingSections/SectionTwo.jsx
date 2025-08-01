@@ -162,7 +162,7 @@ const SectionTwo = () => {
       icon: img1,
       title: "Tell us what matters to you.",
       description: "Your goals, Your dreams, Your future, We'll take it from there.",
-      style: "col-span-1"
+      style: "md:col-span-1  col-span-2"
     },
     {
       id: 2,
@@ -185,7 +185,7 @@ const SectionTwo = () => {
       icon: img4,
       title: "Hands-off, Worry-free, Always working",
       description: "You set the amount and frequency. We handle the rest with secure, transparent AI built for smarter investing.",
-      style: "col-span-1"
+      style: "md:col-span-1  col-span-2"
     }
   ];
 

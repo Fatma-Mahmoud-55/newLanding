@@ -82,11 +82,11 @@ export default function SectionSix() {
             </div>
 
             {/* Right Content - Phone Image */}
-            <div className="absolute bottom-1 z-30 right-0 hidden sm:flex justify-center lg:justify-end">
+            <div className="absolute -bottom-7 z-30 right-0 hidden sm:flex justify-center lg:justify-end">
               <div className="relative">
                 {/* Phone Image */}
                 <div className="relative transform hover:scale-105 hover:rotate-2 transition-all duration-500">
-                   <div className="w-80 lg:w-[500px]">
+                   <div className="w-80 lg:w-[520px]">
             <Image 
               src={img6} 
                     alt="Investment app on iPhone" 
@@ -99,8 +99,9 @@ export default function SectionSix() {
                 </div>
                 
                 {/* Floating decorative elements */}
-                <div className="absolute -left-6 top-20 w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-80 animate-pulse"></div>
-                <div className="absolute -right-4 bottom-32 w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full opacity-70 animate-bounce"></div>
+                <div className="absolute -left-1 top-32 w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-80 animate-pulse"></div>
+                {/* <div className="absolute -right-4 bottom-32 w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full opacity-70 animate-bounce"></div> */}
+                <div className="absolute -right-4 bottom-32 w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-70 animate-bounce"></div>
                 <div className="absolute left-8 bottom-16 w-8 h-8 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-60 animate-ping"></div>
               </div>
             </div>

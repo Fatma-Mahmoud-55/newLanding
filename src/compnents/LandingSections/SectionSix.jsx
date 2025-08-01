@@ -26,7 +26,7 @@ export default function SectionSix() {
               
               {/* Purple Card */}
               <div className="relative w-full">
-                <div className="w-full bg-gradient-to-br from-purple-700 to-purple-400 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden">
+                <div className="w-full bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF]  rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden">
                   {/* Background pattern/texture */}
                   <div className="absolute opacity-10">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full transform translate-x-16 -translate-y-16"></div>

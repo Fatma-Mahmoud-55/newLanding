@@ -1,9 +1,8 @@
 "use client"
 import React from 'react';
-import SectionOne from './SectionOne';
-import SectionTwo from './SectionTwo';
+import SectionFive from './SectionFive';
 
-export default function SectionsContainerOne() {
+export default function SectionsContainerTwo() {
   return (
     <>
       <div className='relative'>
@@ -12,11 +11,10 @@ export default function SectionsContainerOne() {
         
         {/* Content with higher z-index to appear in front */}
         <div className="relative z-10">
-          <SectionOne/>
-          <SectionTwo/>
+        <SectionFive />
         </div>
         
-        {/* <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div> */}
+        <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div>
       </div>
       
       <style jsx>{`

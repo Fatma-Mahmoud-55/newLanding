@@ -27,10 +27,10 @@ export default function SectionOne() {
           title="You were never the problem. The system was."
         />
       </div>
-      <div className="w-full mx-auto relative md:pl-12 pl-0 z-10">
+      <div className="w-full mx-auto relative lg:pl-12 pl-0 z-10">
         <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-center min-h-screen py-10">
           {/* Left Content */}
-          <div className="space-y-1 px-4  md:pl-32  flex flex-col justify-start">
+          <div className="space-y-1 px-4  lg:pl-32  flex flex-col justify-start">
             {/* Subheading */}
             <div data-aos="fade-right" data-aos-delay="400">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight text-center lg:text-left">

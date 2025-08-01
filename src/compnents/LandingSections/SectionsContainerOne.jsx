@@ -1,18 +1,24 @@
 "use client"
 import React from 'react';
-import SectionOne from './SectionOne'; // Added missing 'from' keyword
-import SectionTwo from './SectionTwo'; // Added missing 'from' keyword
+import SectionOne from './SectionOne';
+import SectionTwo from './SectionTwo';
 
 export default function SectionsContainerOne() {
   return (
     <>
       <div className='relative'>
-        <div className=" w-72 !h-32 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
-        <SectionOne/>
-        <SectionTwo/>
-                <div className="w-full py-8  bg-gradient-to-t from-purple-900 to-white  opacity-20    "></div>
-
+        {/* Background gradient div positioned absolutely behind content */}
+        <div className="absolute md:w-72 w-40 md:h-32 h-40 z-0 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
+        
+        {/* Content with higher z-index to appear in front */}
+        <div className="relative z-10">
+          <SectionOne/>
+          <SectionTwo/>
+        </div>
+        
+        <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div>
       </div>
+      
       <style jsx>{`
         @keyframes float {
           0%, 100% {

@@ -74,43 +74,16 @@ const PortfolioInsights = () => {
           <div className={`space-y-4 text-gray-600 text-lg md:text-start text-center leading-relaxed transition-all duration-1000 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '0.6s' }}>
-            <p className="font-medium transition-all duration-300 hover:text-gray-800 hover:scale-105 transform cursor-default">
+            <p className="font-medium ">
               Cut through the noise.
             </p>
-            <p className="transition-all duration-300 hover:text-gray-800 cursor-default leading-loose">
+            <p className="">
               Our smart insights show you what's happening and what matters to you so you're always in control.
             </p>
           </div>
         </div>
       </div>
-      
-      {/* Floating Elements for Extra Visual Appeal */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Floating dots */}
-        <div className={`absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full transition-all duration-1000 ${
-          isVisible ? 'opacity-30 animate-bounce' : 'opacity-0'
-        }`} style={{ 
-          animationDelay: '1s',
-          animationDuration: '3s',
-          animationIterationCount: 'infinite'
-        }}></div>
-        
-        <div className={`absolute top-3/4 right-1/3 w-3 h-3 bg-green-400 rounded-full transition-all duration-1000 ${
-          isVisible ? 'opacity-20 animate-pulse' : 'opacity-0'
-        }`} style={{ 
-          animationDelay: '1.5s',
-          animationDuration: '4s',
-          animationIterationCount: 'infinite'
-        }}></div>
-        
-        <div className={`absolute top-1/2 right-1/4 w-1 h-1 bg-purple-400 rounded-full transition-all duration-1000 ${
-          isVisible ? 'opacity-40 animate-ping' : 'opacity-0'
-        }`} style={{ 
-          animationDelay: '2s',
-          animationDuration: '2s',
-          animationIterationCount: 'infinite'
-        }}></div>
-      </div>
+
     </div>
   );
 };

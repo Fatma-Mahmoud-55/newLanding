@@ -42,7 +42,7 @@ export default function SectionThree() {
       {/* Background blur div - positioned behind the main container */}
       <div className="absolute inset-0 w-full h-10 bg-purple-900 opacity-20 "></div>
       
-      <div className="min-h-screen  bg-white relative z-10 border-t border-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] px-4 pb-4 lg:pt-32 pt-20 lg:pb-8 lg:px-8">
+      <div className="min-h-screen  bg-white relative z-10 border-t border-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] px-4 pb-4 lg:pt-32 pt-16 lg:pb-8 lg:px-8">
   {/* Section Title */}
       <div 
         ref={headerRef}
@@ -60,13 +60,13 @@ export default function SectionThree() {
       </div>
 
             {/* container */}
-            <div className='max-w-7xl mx-auto md:px-6 px-2'>
-                          <div className='rounded-xl   shadow-md border border-gray-100  '>
+            <div className='max-w-7xl mx-auto md:px-6 mt-7 px-2'>
+                          <div className='rounded-xl   shadow-md border border-gray-200  '>
 
               <PortfolioInsights/>
               </div>
               <div className=' grid lg:grid-cols-3 gap-5    pb-16 relative mt-6'>
-            <div className='rounded-xl lg:col-span-2 shadow-md border border-gray-100  md:py-10 py-5 '>
+            <div className='rounded-xl lg:col-span-2 shadow-md border border-gray-200  md:py-10 py-5 '>
 <MarketAccessSection/>
             </div>
             <div className='lg:col-span-1  h-full'>

@@ -2,6 +2,7 @@
 import React from 'react';
 import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
+import SectionThree from './SectionThree';
 
 export default function SectionsContainerOne() {
   return (
@@ -14,6 +15,7 @@ export default function SectionsContainerOne() {
         <div className="relative z-10">
           <SectionOne/>
           <SectionTwo/>
+          <SectionThree/>
         </div>
         
         {/* <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div> */}

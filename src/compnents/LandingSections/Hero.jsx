@@ -27,9 +27,12 @@ export default function Hero() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="block animate-slide-in-left">Invest smarter.</span>
                 <span className="block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Stress less.</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-300 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
+                <span className="block  bg-clip-text text-white animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
                   Be a fincr.
                 </span>
+                {/* <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-300 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
+                  Be a fincr.
+                </span> */}
               </h1>
             </div>
             

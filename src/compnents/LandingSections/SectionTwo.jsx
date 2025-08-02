@@ -121,6 +121,7 @@ const FeatureCard = ({
 
       {/* Animated border effect */}
       <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all duration-500"></div>
+      
     </div>
   );
 };
@@ -230,6 +231,7 @@ const SectionTwo = () => {
           ))}
         </div>
       </div>
+        <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div>
 
       <style jsx>{`
         @keyframes blob {

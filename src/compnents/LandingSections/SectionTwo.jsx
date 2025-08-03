@@ -77,7 +77,7 @@ const FeatureCard = ({
   return (
     <div 
       ref={cardRef}
-      className={`bg-white rounded-3xl p-8 md:p-10 shadow-md transition-all duration-700 hover:shadow-xl border border-gray-100 group relative overflow-hidden ${
+      className={`bg-white rounded-3xl p-6 md:p-10 shadow-sm transition-all duration-700 hover:shadow-xl border border-[#EAD4F0] group relative overflow-hidden ${
         isVisible 
           ? 'opacity-100 translate-y-0 scale-100' 
           : 'opacity-0 translate-y-12 scale-95'
@@ -90,11 +90,11 @@ const FeatureCard = ({
       <div className="absolute -top-10 -right-10 w-20 h-20 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full opacity-0 group-hover:opacity-30 transition-all duration-700 group-hover:scale-150 blur-xl"></div>
       
       <div className="relative z-10">
-        <div className="mb-8 flex justify-center md:justify-start transition-transform duration-500 group-hover:scale-105">
+        <div className={`   ${note?'md:mb-8 mb-1':'mb-8'}  transition-transform duration-500 group-hover:scale-105 ${note?'md:rotate-0 rotate-18':''}`}>
           {renderIcon()}
         </div>
         
-        <div className="space-y-4 text-center md:text-start">
+        <div className="space-y-4 ">
           <h3 className="text-xl md:text-2xl  font-bold text-gray-900 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-blue-600 group-hover:bg-clip-text leading-tight">
             {title}
           </h3>

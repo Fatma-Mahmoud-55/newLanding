@@ -7,7 +7,7 @@ const FincScoreSection = ({icon , title , desc}) => {
       
       {icon&&(
            <div className="mb-6">
-        <div className="  rounded-2xl flex items-center justify-center md:justify-start ">
+        <div className="  rounded-2xl flex items-center  ">
           {/* Image placeholder - replace with your actual image */}
                  <img 
                 src='/fincImg.png' 
@@ -23,12 +23,12 @@ const FincScoreSection = ({icon , title , desc}) => {
       )}
    
       {/* Main heading */}
-      <h2 className="text-2xl md:text-4xl font-normal mb-6 ">
+      <h2 className="text-2xl md:text-4xl md:font-normal font-semibold mb-6 ">
         {title}
       </h2>
       
       {/* Description text */}
-      <div className="space-y-3 text-lg  text-purple-100">
+      <div className="md:space-y-3 space-y-1 md:text-lg text-md text-purple-200">
         {desc}
         {/* <p className="text-lg l">
           Think of it like a fitness tracker but for stocks.

@@ -15,9 +15,18 @@ export default function SectionsContainerOne() {
         <div className="relative z-10">
           <SectionOne/>
           <SectionTwo/>
+        <div className="relative z-10">
+          <img 
+                src='/fincSVG.svg' 
+                alt="fincImg" 
+              style={{
+                animation: 'spin 30s linear infinite'
+              }}
+                className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-44 w-44 z-[60] -top-25 -left-30  absolute object-contain  animate-spin "
+              />
           <SectionThree/>
+          </div>
         </div>
-        
         {/* <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div> */}
       </div>
       

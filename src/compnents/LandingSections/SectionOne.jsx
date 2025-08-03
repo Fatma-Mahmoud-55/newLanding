@@ -30,26 +30,27 @@ export default function SectionOne() {
       <div className="w-full mx-auto relative lg:pl-12 pl-0 z-10">
         <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-center min-h-screen py-10">
           {/* Left Content */}
-          <div className="space-y-1 px-4  lg:pl-32  flex flex-col justify-start">
+          <div className="space-y-1 px-4 order-2 md:order-1 lg:pl-32  flex flex-col justify-start">
             {/* Subheading */}
             <div data-aos="fade-right" data-aos-delay="400">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight text-center lg:text-left">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight ">
                 finc flips the script
               </h2>
             </div>
             {/* Description */}
             <div data-aos="fade-right" data-aos-delay="600">
-              <p className="text-lg sm:text-xl leading-relaxed max-w-md font-medium text-center lg:text-left mx-auto lg:mx-0">
-                We built a platform that works for you — not for banks, brokers, or algorithms. Simple, transparent, and genuinely automated investing that finally makes sense.
+              <p className="text-sm sm:text-xl text-gray-600 max-w-md leading-relaxed	  mx-auto lg:mx-0">
+We built a platform that works for you. <br/>
+No stress. No pressure. Just intelligent,<br/> automated investing that finally makes sense.
               </p>
             </div>
           </div>
           {/* Right Content - Image */}
-          <div className="relative flex justify-end lg:justify-end" data-aos="fade-left" data-aos-delay="800">
+          <div className="relative flex justify-end order-1 md:order-2 lg:justify-end" data-aos="fade-left" data-aos-delay="800">
             {/* Hand holding phone animation wrapper */}
             <div className="w-full h-full max-w-lg lg:max-w-none lg:pr-0">
               {/* Image container - positioned to extend to right border */}
-              <div className="relative h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] -lg:translate-x-6">
+              <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] -lg:translate-x-6">
                 <Image
                   src="/sectionOneImg.png"
                   alt="Hand holding phone with finc app"

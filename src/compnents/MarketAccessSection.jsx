@@ -46,12 +46,12 @@ export default function MarketAccessSection() {
           }`}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2  items-center">
+            <div className="grid lg:grid-cols-2   items-center">
               
               {/* Left Side - Content */}
-              <div className="space-y-8">
+              <div className="space-y-8 order-2 md:order-1">
                 {/* Gradient Arrows */}
-                <div className="flex md:justify-start justify-center  space-x-4 mb-8">
+                <div className="flex  space-x-4 mb-8 mt-8 md:mt-0">
                    <img 
                 src='/Arrow.png' 
                 alt="arrows" 
@@ -61,7 +61,7 @@ export default function MarketAccessSection() {
 
                 {/* Main Heading */}
                 <div>
-                  <h1 className="text-2xl md:text-4xl md:text-start text-center  text-gray-900 leading-tight">
+                  <h1 className="text-3xl md:text-4xl  md:font-normal  font-semibold text-gray-900 leading-tight">
                     Access local &
                     <br />
                     global markets.
@@ -69,16 +69,16 @@ export default function MarketAccessSection() {
                 </div>
 
                 {/* Subtext */}
-                <div className="text-lg text-gray-600 max-w-md md:text-start text-center">
+                <div className="text-lg text-gray-600 max-w-md ">
                   From local to global markets go big, stay small, or balance both. It's your call.
                 </div>
               </div>
 
               {/* Right Side - Market Cards */}
-              <div className="space-y-4">
+              <div className="space-y-4 order-1 md:order-2">
                 
                 {/* EGX30 Card */}
-                <div className="bg-gradient-to-br shadow-xl from-white to-[#D5C3E9B2]   rounded-2xl p-6 shadow-sm relative overflow-hidden">
+                <div className="bg-gradient-to-br shadow-xl from-white to-[#D5C3E9B2]   rounded-2xl p-6  relative overflow-hidden">
                   {/* Wave Pattern */}
                   <div className="absolute bottom-0 right-0 opacity-20">
                     <svg width="120" height="60" viewBox="0 0 120 60" fill="none">
@@ -117,7 +117,7 @@ export default function MarketAccessSection() {
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                   
                   {/* EGX70 Card */}
-                  <div className="bg-gradient-to-br shadow-xl from-white via-[#D5C3E9B2] to-white rounded-2xl p-4 shadow-sm relative overflow-hidden">
+                  <div className="bg-gradient-to-br shadow-xl from-white via-[#D5C3E9B2] to-white rounded-2xl p-4  relative overflow-hidden">
                     {/* Wave Pattern */}
                     <div className="absolute bottom-0 right-0 opacity-20">
                       <svg width="80" height="40" viewBox="0 0 80 40" fill="none">
@@ -151,7 +151,7 @@ export default function MarketAccessSection() {
                   </div>
 
                   {/* EGX100 Card */}
-                  <div className="bg-gradient-to-br shadow-xl from-white to-[#F4C05F4D]   rounded-2xl p-4 shadow-sm relative overflow-hidden">
+                  <div className="bg-gradient-to-br shadow-xl from-white to-[#F4C05F4D]   rounded-2xl p-4  relative overflow-hidden">
                     {/* Wave Pattern */}
                     <div className="absolute bottom-0 right-0 opacity-20">
                       <svg width="80" height="40" viewBox="0 0 80 40" fill="none">

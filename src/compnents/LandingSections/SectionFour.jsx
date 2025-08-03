@@ -13,13 +13,13 @@ const SectionFour = () => {
       <div className="relative z-10 w-full min-h-screen  bg-white overflow-hidden lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]">
         {/* Background Image */}
         <div className="absolute inset-0 ">
-          <div className="absolute md:-mr-60 mr-0 md:bottom-32 md:top-base top-20  transform flex justify-end">
+          <div className="absolute md:-mr-60 mr-0 md:bottom-32 md:top-auto top-20  transform flex justify-end">
             <img 
               src="/ring.png" 
               alt="ring" 
               className="md:w-6/12 w-full animate-spin"
               style={{
-                animation: 'spin 110s linear infinite'
+                animation: 'spin 80s linear infinite'
               }}
             />
           </div>

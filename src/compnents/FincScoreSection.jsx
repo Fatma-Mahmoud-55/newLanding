@@ -12,7 +12,10 @@ const FincScoreSection = ({icon , title , desc}) => {
                  <img 
                 src='/fincImg.png' 
                 alt="fincImg" 
-                className="w-26 h-26 object-contain transform group-hover:scale-110 hover:-rotate-12 transition-transform duration-300"
+              style={{
+                animation: 'spin 40s linear infinite'
+              }}
+                className="w-26 h-26 object-contain  animate-spin transform group-hover:scale-110 hover:-rotate-12 transition-transform duration-300"
               />
         </div>
       </div>

@@ -18,13 +18,13 @@ const PortfolioInsights = () => {
           isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
         }`}>
           {/* Background image */}
-          <div className="relative  md:-bottom-65 -bottom-27 group">
+          <div className="relative  md:-bottom-45 -bottom-27 group">
             <img 
               src='/ballll.png' 
               alt="AiBg" 
               className="object-contain transform transition-all duration-700 ease-out hover:scale-105 animate-spin"
               style={{
-                animation: 'spin 95s linear infinite'
+                animation: 'spin 60s linear infinite'
               }}
             />
           </div>

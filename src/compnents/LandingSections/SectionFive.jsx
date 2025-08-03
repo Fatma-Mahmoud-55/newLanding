@@ -13,7 +13,7 @@ const SectionFive = () => {
     {
       question: "🧠 Do I need to know anything about investing?",
       answer: (
-        <div className="space-y-3">
+        <div className="space-y-1">
           <p className="opacity-90">Not at all — that's exactly what finc is here for.</p>
           <p className="opacity-90">Whether you want to:</p>
           <p className="opacity-90">Let us handle everything with fully automated, expertly managed portfolios, or</p>
@@ -25,63 +25,98 @@ const SectionFive = () => {
     {
       question: "💰 How much money do I need to start?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">You can start investing with finc with as little as $1. There's no minimum balance required to get started.</p>
-          <p className="opacity-90">Our platform is designed to be accessible to everyone, whether you're just beginning your investment journey or you're an experienced investor.</p>
+        <div className="space-y-1">
+
+
+          <p className="opacity-90"></p>
+          <p className="opacity-90">You can start with just EGP 500 in your automated portfolio - fully managed by finc’s advanced algorithms, AI models and financial experts</p>
+          <p className="opacity-90">We also offer multiple tiers based on how involved you want to be.</p>
+          <p className="opacity-90">From Beginner (free) for market access and insights, to Growth for a mix of automation</p>
+          <p className="opacity-90">
+            tailored advice and strong support tools like fincr score, all the way to Wealth+ - built for those who want powerful advanced tools to research, build, and manage portfolios on their own.
+          </p>
+
         </div>
       )
     },
     {
       question: "📉 What happens if the market drops?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">Market fluctuations are normal and expected in investing. When markets drop, finc's automated systems are designed to help protect your investments through diversification and smart rebalancing.</p>
-          <p className="opacity-90">Our algorithms continuously monitor your portfolio and make adjustments as needed to help minimize risk during market downturns.</p>
+        <div className="space-y-1">
+          <p className="opacity-90">We’ve got your back.</p>
+          <p className="opacity-90">finc diversifies your portfolio and adjusts based on your risk profile - automatically. It’s like </p>
+          <p className="opacity-90">having a money brain that doesn’t panic.</p>
         </div>
       )
     },
     {
       question: "🕊 Can I withdraw anytime?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">Yes, you have full access to your money. You can withdraw your funds at any time without penalties from finc.</p>
-          <p className="opacity-90">Withdrawals are typically processed within 1-3 business days, depending on your bank and the withdrawal method you choose.</p>
+        <div className="space-y-1">
+          <p className="opacity-90">Absolutely</p>
+          <p className="opacity-90">It’s your money. Take it out whenever you want — no lock-ins, no exit fees, no guilt trips.</p>
         </div>
       )
     },
     {
       question: "💸 How does finc make money?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">finc charges a transparent, low management fee based on your account balance. There are no hidden fees or commissions.</p>
-          <p className="opacity-90">Our fee structure is designed to align our interests with yours - we only succeed when your investments grow.</p>
+        <div className="space-y-1">
+          <p className="opacity-90">We believe in radical transparency.</p>
+          <p className="opacity-90"> 
+finc charges only transaction fees and a small management fee on the money you let us manage for you (for every EGP20k we manage - we take EGP100 annually) — and that’s it.</p>
+          <p className="opacity-90">We also offer three clear subscription tiers with extra features to empower you to go deeper, track smarter, and even manage your own portfolio(s) if you want to.</p>
+                  <p className="opacity-90">
+                    
+
+No hidden fees.<br/>
+No commissions.<br/>
+No funny business.
+                  </p>
+
         </div>
       )
     },
     {
       question: "🔐 Is finc safe to use?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">Yes, finc prioritizes your security. We use bank-level encryption and security measures to protect your personal and financial information.</p>
-          <p className="opacity-90">Your investments are held by regulated custodians and are protected by SIPC insurance up to $500,000.</p>
+        <div className="space-y-1">
+          <p className="opacity-90">
+            Yes.<br/>
+We use bank-grade encryption, secure servers, and strict regulatory compliance to keep your data and funds safe. We're also working closely with regulators in Egypt to stay fully transparent and compliant.
+          </p>
         </div>
       )
     },
     {
       question: "🤖 Is this all AI? No humans in the process?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">While finc leverages advanced AI technology for portfolio management and optimization, we also have human experts overseeing the process.</p>
-          <p className="opacity-90">Our team of financial professionals monitors the AI systems and is available to provide support when you need it.</p>
+        <div className="space-y-1">
+
+          <p className="opacity-90"> 
+            Not at all.<br/>
+            finc uses AI to empower you - and our team - not replace anyone.Think: smarter decisions, less guesswork, better outcomes
+          </p>
+          <p className="opacity-90"> 
+            Behind the tech, we’ve got real industry experts and investment professionals making sure everything stays sharp, safe, and aligned with your goals.
+            </p>
+            <p className="opacity-90"> 
+You stay in control. We just make it easier... Much easier.
+            </p>
         </div>
       )
     },
     {
       question: "📲 When can I get access?",
       answer: (
-        <div className="space-y-3">
-          <p className="opacity-90">You can sign up for finc today! Once you complete the registration process, you'll have immediate access to start investing.</p>
-          <p className="opacity-90">The onboarding process typically takes just a few minutes to complete.</p>
+        <div className="space-y-1">
+          <p className="opacity-90">
+            We’re launching soon and aitlist members get early access!
+            </p>
+          <p className="opacity-90">
+            Join now to unlock early access, special perks, and updates as we roll out.<br/>
+            Spots are limited, but your future isn’t.
+          </p>
         </div>
       )
     }

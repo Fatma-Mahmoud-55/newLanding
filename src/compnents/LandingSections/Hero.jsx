@@ -87,7 +87,7 @@ export default function Hero() {
           {/* Floating orbs */}
           <div className="absolute top-0 left-5 w-80 h-80 rounded-full blur-xl animate-pulse" style={{  background: 'rgba(244, 114, 182, 0.15)' }}></div>
           <div className="absolute top-40 right-20 w-48 h-48 rounded-full blur-2xl animate-bounce" style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>
-          <div className="absolute bottom-1  right-1/4 w-90 h-90  rounded-full blur-2xl animate-bounce   " 
+          <div className="absolute bottom-1  right-1/4 w-90 h-90  rounded-full blur-2xl animate-bounce" 
        style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>
                <div className="absolute bottom-20 left-1/4 w-24 h-24 rounded-full blur-lg animate-pulse" style={{ background: 'rgba(196, 181, 253, 0.25)', animationDelay: '1s' }}></div>
           

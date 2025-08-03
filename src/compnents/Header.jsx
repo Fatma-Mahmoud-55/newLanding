@@ -16,15 +16,42 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Smooth scroll function
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 80; // Height of your fixed navbar
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Handle navigation clicks
+  const handleNavClick = (e, href, sectionId) => {
+    // If it's a section link (starts with #), prevent default and scroll
+    if (sectionId) {
+      e.preventDefault();
+      scrollToSection(sectionId);
+      setIsOpen(false); // Close mobile menu after navigation
+    }
+    // For external routes, let the default behavior happen
+  };
+
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleTheme = () => setIsDark(!isDark);
   const toggleSearch = () => setSearchOpen(!searchOpen);
 
+  // Updated navigation items with section IDs for smooth scrolling
   const navigationItems = [
-    { name: 'Home', href: '/' },
-    { name: 'How it works', href: '/how-work' },
-    { name: 'Features', href: '/features' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'Home', href: '#home', sectionId: 'home' },
+    { name: 'How it works', href: '#how-it-works', sectionId: 'how-it-works' },
+    { name: 'Features', href: '#features', sectionId: 'features' },
+    { name: 'FAQ', href: '#faq', sectionId: 'faq' },
   ];
 
   return (<>
@@ -40,7 +67,11 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="group">
+              <a 
+                href="#home" 
+                className="group"
+                onClick={(e) => handleNavClick(e, '#home', 'home')}
+              >
                 <div className="flex items-center space-x-3">
                   <div className="relative">
                     <img 
@@ -62,7 +93,8 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="relative text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-light tracking-wide transition-colors duration-300 group"
+                  onClick={(e) => handleNavClick(e, item.href, item.sectionId)}
+                  className="relative text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-light tracking-wide transition-colors duration-300 group cursor-pointer"
                   style={{ '--index': index }}
                 >
                   {item.name}
@@ -126,7 +158,8 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-4 text-lg font-light text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:translate-x-2"
+                  onClick={(e) => handleNavClick(e, item.href, item.sectionId)}
+                  className="block px-4 py-4 text-lg font-light text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:translate-x-2 cursor-pointer"
                   style={{ 
                     animationDelay: `${index * 100}ms`,
                     animation: isOpen ? 'slideInLeft 0.5s ease-out forwards' : 'none'

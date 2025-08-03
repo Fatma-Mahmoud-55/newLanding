@@ -7,27 +7,29 @@ import SectionThree from './SectionThree';
 export default function SectionsContainerOne() {
   return (
     <>
-      <div className='relative'>
+      <div className='relative w-full overflow-x-hidden'>
         {/* Background gradient div positioned absolutely behind content */}
-        <div className="absolute md:w-72 w-40 md:h-32 h-40 z-0 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
+        <div className="absolute md:w-72 w-20 md:h-32 h-40 -left-10 -top-10 -z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120 md:p-40 p-32"></div>
         
         {/* Content with higher z-index to appear in front */}
         <div className="relative z-10">
           <SectionOne/>
           <SectionTwo/>
+          <div className="absolute md:w-80  w-40 h-96 md:p-40 p-12 -left-32 top-[45rem] -z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120"></div>
+          <div className="absolute md:w-60 w-40 h-[900px] md:p-40 p-12 top-1/4 -right-20 -z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120"></div>
+        </div>
+        
         <div className="relative z-10">
           <img 
-                src='/fincSVG.svg' 
-                alt="fincImg" 
-              style={{
-                animation: 'spin 30s linear infinite'
-              }}
-                className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-44 w-44 z-[60] -top-25 -left-30  absolute object-contain  animate-spin "
-              />
+            src='/fincSVG.svg' 
+            alt="fincImg" 
+            style={{
+              animation: 'spin 30s linear infinite'
+            }}
+            className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-44 w-44 z-[60] -top-[6.25rem] -left-[7.5rem] absolute object-contain animate-spin"
+          />
           <SectionThree/>
-          </div>
         </div>
-        {/* <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div> */}
       </div>
       
       <style jsx>{`

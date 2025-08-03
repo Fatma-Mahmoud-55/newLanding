@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import SectionFive from './SectionFive';
+import SectionFour from './SectionFour';
 
 export default function SectionsContainerTwo() {
   return (
@@ -8,7 +9,7 @@ export default function SectionsContainerTwo() {
       <div className='relative'>
         {/* Background gradient div positioned absolutely behind content */}
         <div className="absolute md:w-72 w-40 md:h-32 h-40 z-0 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
-        
+        <SectionFour/>
         {/* Content with higher z-index to appear in front */}
         <div className="relative z-10">
         <SectionFive />

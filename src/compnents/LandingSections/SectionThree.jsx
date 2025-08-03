@@ -59,8 +59,8 @@ export default function SectionThree() {
         />
       </div>
 
-            {/* container */}
-            <div className='max-w-7xl mx-auto md:px-6 mt-7 px-2'>
+            {/* container */} 
+            <div className='max-w-7xl mx-auto md:px-6 mt-7 px-2 '>
                           <div className='rounded-xl   shadow-md border border-gray-200  '>
 
               <PortfolioInsights/>
@@ -70,7 +70,10 @@ export default function SectionThree() {
 <MarketAccessSection/>
             </div>
             <div className='lg:col-span-1  h-full'>
-<FincScoreSection/>
+<FincScoreSection icon={true}
+title="Your finc Score = a stock's health check"
+desc="Think of it like a fitness tracker but for stocks.We analyze key signals so you know exactly where a stock stands before making a move."
+/>
             </div>
             </div> 
             </div>

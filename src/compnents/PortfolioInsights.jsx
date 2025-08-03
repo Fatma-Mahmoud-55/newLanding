@@ -11,40 +11,38 @@ const PortfolioInsights = () => {
 
   return (
     <div className="flex items-end justify-center overflow-hidden">
-      <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-8 items-end">
+      <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-1  items-end">
         
         {/* Left Side - Images */}
-        <div className={`relative sm:px-0 px-4 h-full flex items-end order-2 md:order-1 md:pt-0 pt-10 transition-all duration-1000 ease-out ${
+        <div className={`relative sm:px-0 px-4 md:h-fit sm:h-[50%] h-fit  md:w-lg mx-auto flex items-end justify-end order-2 md:order-1 md:pt-0 pt-10 transition-all duration-1000 ease-out ${
           isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
         }`}>
           {/* Background image */}
-          <div className="relative group">
+          <div className="relative  md:-bottom-65 -bottom-27 group">
             <img 
-              src='/AiBg.png' 
+              src='/ballll.png' 
               alt="AiBg" 
-              className="object-contain transform transition-all duration-700 ease-out hover:scale-105 animate-pulse"
+              className="object-contain transform transition-all duration-700 ease-out hover:scale-105 animate-spin"
               style={{
-                animationDelay: '0.5s',
-                animationDuration: '3s',
-                animationIterationCount: 'infinite'
+                animation: 'spin 95s linear infinite'
               }}
             />
           </div>
            
           {/* Foreground Image Container - Centered on background */}
-          <div className={`absolute inset-0 flex items-end justify-center transition-all duration-1200 ease-out ${
+          <div className={`absolute lg:h-fit h-full px-10  pt-10 inset-0 flex items-end justify-center transition-all duration-1200 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '0.3s' }}>
             <img 
               src='/iphone2.png' 
               alt="iphone2" 
-              className="w-full h-full object-contain transform transition-all duration-500 ease-out hover:scale-110 hover:-rotate-2 hover:translate-y-2"
+              className="w-full  object-contain transform transition-all duration-500 ease-out hover:scale-110 hover:-rotate-2 hover:translate-y-2"
             />
           </div>
         </div>
 
         {/* Right Side - Content */}
-        <div className={`space-y-6 md:px-4 px-2 py-12 order-1 md:order-2 transition-all duration-1000 ease-out ${
+        <div className={`space-y-6 md:px-4 md:w-md  mx-auto px-2 md:pt-12 md:pb-12 pt-7 pb-0 order-1 md:order-2 transition-all duration-1000 ease-out ${
           isVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'
         }`}>
           

@@ -114,8 +114,10 @@ const SectionFive = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  return (
+  return (<>
+        <div className="w-full py-8 bg-gradient-to-b from-purple-900 to-white opacity-20"></div>
     <div className="max-w-5xl mx-auto p-6  min-h-screen">
+      
       {/* Header */}
       <SectionTitle
                subTitle="QUESTIONS AND ANSWERS PROVIDED BELOW"
@@ -196,7 +198,7 @@ const SectionFive = () => {
         }
       `}</style>
     </div>
-  );
+  </>);
 };
 
 export default SectionFive;

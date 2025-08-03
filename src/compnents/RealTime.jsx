@@ -44,12 +44,12 @@ export default function RealTime() {
       </div>
 
       {/* Main heading */}
-      <h1 className="text-4xl  text-gray-900 mb-6 leading-tight">
+      <h1 className="text-4xl md:text-start text-center  text-gray-900 mb-6 leading-tight">
         Real-time tracking & alerts
       </h1>
 
       {/* Description */}
-      <p className="text-gray-600 text-lg leading-relaxed">
+      <p className="text-gray-600 md:text-start text-center text-lg leading-relaxed">
         Smart nudges and helpful updates. Just the right amount of "hey, check this."
       </p>
     </div>

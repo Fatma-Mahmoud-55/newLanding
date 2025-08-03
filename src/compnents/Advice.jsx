@@ -11,17 +11,17 @@ export default function Advice() {
     // <div className="max-w-md mx-auto p-6 bg-white">
     <div className=" mx-auto p-6">
       {/* Main heading */}
-      <h1 className="text-3xl text-gray-900 mb-3 leading-tight">
+      <h1 className="text-3xl md:text-start text-center text-gray-900 mb-3 leading-tight">
         Get advice that actually makes sense
       </h1>
 
       {/* Subtitle */}
-      <p className="text-gray-900  mb-1">
+      <p className="text-gray-900 md:text-start text-center mb-1">
         Clear. Personalized. AI-powered.
       </p>
 
       {/* Description */}
-      <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+      <p className="text-gray-600 md:text-start text-center text-sm mb-8 leading-relaxed">
         No jargon, just the next right move for you in plain English (or Arabic).
       </p>
 

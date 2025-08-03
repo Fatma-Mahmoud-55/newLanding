@@ -13,7 +13,7 @@ const FincScoreSection = ({icon , title , desc}) => {
                 src='/fincImg.png' 
                 alt="fincImg" 
               style={{
-                animation: 'spin 40s linear infinite'
+                animation: 'spin 30s linear infinite'
               }}
                 className="w-26 h-26 object-contain  animate-spin transform group-hover:scale-110 hover:-rotate-12 transition-transform duration-300"
               />

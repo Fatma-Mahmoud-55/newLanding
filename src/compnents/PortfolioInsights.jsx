@@ -24,7 +24,7 @@ const PortfolioInsights = () => {
               alt="AiBg" 
               className="object-contain transform transition-all duration-700 ease-out hover:scale-105 animate-spin"
               style={{
-                animation: 'spin 60s linear infinite'
+                animation: 'spin 40s linear infinite'
               }}
             />
           </div>

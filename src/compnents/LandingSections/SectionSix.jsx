@@ -1,10 +1,81 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import axios from 'axios';
 import img6 from './../../../public/sectionSixImg.png';
 
+// Rate limiting variables (in-memory storage)
+let lastRequestTime = 0;
+const RATE_LIMIT_DURATION = 1 * 60 * 1000; // 3 minutes in milliseconds
+
 export default function SectionSix() {
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
+  const [rateLimitMessage, setRateLimitMessage] = useState('');
+
+  const checkRateLimit = () => {
+    const currentTime = Date.now();
+    const timeSinceLastRequest = currentTime - lastRequestTime;
+    
+    if (lastRequestTime > 0 && timeSinceLastRequest < RATE_LIMIT_DURATION) {
+      const remainingTime = RATE_LIMIT_DURATION - timeSinceLastRequest;
+      const remainingMinutes = Math.ceil(remainingTime / (60 * 1000));
+      return {
+        allowed: false,
+        remainingMinutes
+      };
+    }
+    
+    return { allowed: true };
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setRateLimitMessage('');
+
+    // Check rate limit
+    const rateLimitCheck = checkRateLimit();
+    if (!rateLimitCheck.allowed) {
+      setRateLimitMessage(`Please wait ${rateLimitCheck.remainingMinutes} more minute(s) before trying again.`);
+      return;
+    }
+
+    if (!email.trim()) {
+      setError('Please enter your email address.');
+      return;
+    }
+
+    setIsLoading(true);
+    
+    // Update last request time immediately when making the request
+    lastRequestTime = Date.now();
+
+    try {
+      await axios.post('http://contact.terzoo.com/api/whitelist/store', {
+        email: email
+      }).then((res) => {
+        setIsSuccess(true);
+        setEmail('');
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 4000);
+      });
+   
+    } catch (err) {
+      if (err.response && err.response.data && err.response.data.errors && err.response.data.errors.email) {
+        setError(err.response.data.errors.email[0]);
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="relative">
       {/* Background blur div - positioned behind the main container */}
@@ -65,17 +136,54 @@ export default function SectionSix() {
                       Join thousands of smart investors who are growing their wealth with our intelligent investment platform. Start with as little as $1 and watch your money work harder for you.
                     </p>
                     
+                    {/* Success Message */}
+                    {isSuccess && (
+                      <div className="mb-4 p-3 rounded-lg bg-green-100 border border-green-200">
+                        <p className="text-sm text-green-800 font-medium">🎉 Welcome aboard! You're now on the waitlist.</p>
+                      </div>
+                    )}
+
+                    {/* Error Messages */}
+                    {error && (
+                      <div className="mb-4 p-3 rounded-lg bg-red-100 border border-red-200">
+                        <p className="text-sm text-red-600">{error}</p>
+                      </div>
+                    )}
+
+                    {rateLimitMessage && (
+                      <div className="mb-4 p-3 rounded-lg bg-orange-100 border border-orange-200">
+                        <p className="text-sm text-orange-600">{rateLimitMessage}</p>
+                      </div>
+                    )}
+                    
                     {/* Email input */}
-                    <div className="flex bg-white rounded-full w-full shadow-lg">
-                      <input 
-                        type="email" 
-                        placeholder="Enter your email" 
-                        className="relative w-full bg-transparent text-gray-700 placeholder-gray-500 px-4 py-3 focus:outline-none font-medium text-sm"
-                      />
-                      <button className="right-0 absolute bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap">
-                        Join waitlist
-                      </button>
-                    </div>
+                    <form onSubmit={handleSubmit} className="relative">
+                      <div className="flex bg-white rounded-full w-full shadow-lg">
+                        <input 
+                          type="email" 
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder="Enter your email" 
+                          className="relative w-full bg-transparent text-gray-700 placeholder-gray-500 px-4 py-3 focus:outline-none font-medium text-sm"
+                          disabled={isLoading}
+                          required
+                        />
+                        <button 
+                          type="submit"
+                          disabled={isLoading || !email.trim()}
+                          className="right-0 absolute bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center space-x-2"
+                        >
+                          {isLoading ? (
+                            <>
+                              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                              <span>Joining...</span>
+                            </>
+                          ) : (
+                            <span>Join waitlist</span>
+                          )}
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

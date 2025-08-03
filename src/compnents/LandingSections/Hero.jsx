@@ -49,7 +49,7 @@ export default function Hero() {
     lastRequestTime = Date.now();
 
     try {
-      await axios.post('http://contact.terzoo.com/api/whitelist/store', {
+      await axios.post('https://contact.terzoo.com/api/whitelist/store', {
         email: email
       }).then((res) => {
         setIsSuccess(true);

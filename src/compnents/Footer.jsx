@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiInstagramFill } from "react-icons/ri";
-import { FaTelegramPlane } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
             {/* Social media section */}
             <div className="flex items-center justify-center gap-3">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/fincfinancials?igsh=MTZwbHd0dDlubDNycg==" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-10 h-10 flex items-center justify-center"
@@ -64,25 +64,25 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://telegram.org" 
+                href="https://www.tiktok.com/@fincfinancials?_t=ZS-8yZYfomKs3M&_r=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-10 h-10 flex items-center justify-center"
                 aria-label="Telegram"
               >
                 <div className="absolute inset-0 w-10 h-10 bg-[#EAD4F066] rounded-full transition-all duration-300 group-hover:scale-110"></div>
-                <FaTelegramPlane size={20} className="relative z-10 text-[#915EB7] group-hover:scale-110 transition-transform duration-300" />
+                <FaTiktok size={20} className="relative z-10 text-[#915EB7] group-hover:scale-110 transition-transform duration-300" />
               </a>
               
               <a 
-                href="https://twitter.com" 
+                href="https://www.linkedin.com/in/finc-financials-22851734a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative w-10 h-10 flex items-center justify-center"
                 aria-label="Twitter"
               >
                 <div className="absolute inset-0 w-10 h-10 bg-[#EAD4F066] rounded-full transition-all duration-300 group-hover:scale-110"></div>
-                <FaTwitter size={20} className="relative z-10 text-[#915EB7] group-hover:scale-110 transition-transform duration-300" />
+                <FaLinkedinIn size={20} className="relative z-10 text-[#915EB7] group-hover:scale-110 transition-transform duration-300" />
               </a>
             </div>
           </div>

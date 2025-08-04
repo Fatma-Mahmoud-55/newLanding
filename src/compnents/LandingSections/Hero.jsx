@@ -78,7 +78,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative min-h-screen overflow-hidden border-b lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]" style={{ background: 'linear-gradient(to bottom right, #2E0D47,#2E0D47, #4C1D95, #2E0D47)' }}>
+      <div id='home' className="relative min-h-screen overflow-hidden border-b lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]" style={{ background: 'linear-gradient(to bottom right, #2E0D47,#2E0D47, #4C1D95, #2E0D47)' }}>
         {/* Animated background elements */}
         <div className="absolute inset-0">
           {/* Main gradient overlay */}

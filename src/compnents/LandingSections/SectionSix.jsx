@@ -88,7 +88,7 @@ export default function SectionSix() {
             {/* Left Content */}
             <div className="relative z-20 w-full">
                  {/* Large Headline */}
-              <h1 className="text-6xl text-center md:text-start md:text-8xl xl:text-9xl font-black text-black leading-none mb-8 lg:mb-12">
+              <h1 className="text-5xl  md:text-8xl xl:text-9xl font-black text-black leading-none mb-8 lg:mb-12">
                 Ready to
                 <br />
                 grow?
@@ -132,7 +132,7 @@ export default function SectionSix() {
                     <h2 className="text-xl lg:text-2xl font-bold mb-4">
                       Invest in your future your way
                     </h2>
-                    <p className="text-purple-100 leading-relaxed mb-8 text-base lg:text-lg opacity-90">
+                    <p className="text-gray-300 mb-8 text-sm lg:text-lg opacity-90">
                       Join thousands of smart investors who are growing their wealth with our intelligent investment platform. Start with as little as $1 and watch your money work harder for you.
                     </p>
                     

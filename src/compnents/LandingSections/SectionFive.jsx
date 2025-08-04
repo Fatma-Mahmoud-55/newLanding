@@ -184,7 +184,7 @@ You stay in control. We just make it easier... Much easier.
                 }`}
               >
                 <div className="flex justify-between items-center">
-                  <span className="md:text-base text-sm font-semibold pr-4">{item.question}</span>
+                  <span className="md:text-base text-md font-semibold pr-4">{item.question}</span>
                   <div className={`transform transition-all duration-300 ${
                     openIndex === index ? 'rotate-180 scale-110' : 'group-hover:scale-110'
                   }`}>

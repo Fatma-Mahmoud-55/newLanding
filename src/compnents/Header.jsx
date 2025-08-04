@@ -104,29 +104,29 @@ const Header = () => {
             </div>
 
             {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center space-x-4">
+            {/* <div className="hidden lg:flex items-center space-x-4"> */}
               {/* Theme Toggle */}
-              <button
+              {/* <button
                 onClick={toggleTheme}
                 className="p-2.5 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-200"
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </button>
+              </button> */}
 
               {/* User */}
-              <button className="p-2.5 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-200">
+              {/* <button className="p-2.5 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-200">
                 <User className="w-5 h-5" />
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
 
             {/* Mobile menu button */}
             <div className="lg:hidden flex items-center space-x-3">
-              <button
+              {/* <button
                 onClick={toggleTheme}
                 className="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </button>
+              </button> */}
               
               <button
                 onClick={toggleMenu}
@@ -169,12 +169,12 @@ const Header = () => {
                 </a>
               ))}
               
-              <div className="pt-6 px-4 space-y-4">
+              {/* <div className="pt-6 px-4 space-y-4">
                 <button className="flex items-center space-x-3 w-full p-3 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <User className="w-5 h-5" />
                   <span>Account</span>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </nav>

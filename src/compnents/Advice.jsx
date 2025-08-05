@@ -10,23 +10,26 @@ export default function Advice() {
   return (
     // <div className="max-w-md mx-auto p-6 bg-white">
     <div className="max-w-lg w-full mx-auto md:p-6 p-3">
-      {/* Main heading */}
-      <h1 className="text-3xl md:text-start text-center text-gray-900 mb-3 leading-tight">
+      <div className='w-full order-2 md:order-1'>
+           {/* Main heading */}
+      <h1 className="text-3xl  text-gray-900 mb-3 leading-tight">
         Get advice that actually makes sense
       </h1>
 
       {/* Subtitle */}
-      <p className="text-gray-900 md:text-start text-center mb-1">
+      <p className="text-gray-900  mb-1">
         Clear. Personalized. AI-powered.
       </p>
 
       {/* Description */}
-      <p className="text-gray-600 md:text-start text-center text-sm mb-8 leading-relaxed">
+      <p className="text-gray-600  text-sm mb-8 leading-relaxed">
         No jargon, just the next right move for you in plain English (or Arabic).
       </p>
 
+      </div>
+   
       {/* Try asking section */}
-      <div className="mb-6 md:w-9/12 w-full  mx-auto ">
+      <div className="mb-6 md:w-9/12 w-full  mx-auto order-1 md:order-2  ">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">
           Try asking
         </h2>

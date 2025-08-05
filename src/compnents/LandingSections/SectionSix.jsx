@@ -188,7 +188,7 @@ export default function SectionSix() {
                 {/* Floating decorative elements */}
                 <div className="absolute -left-1 top-32 w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-80 animate-pulse"></div>
                 {/* <div className="absolute -right-4 bottom-32 w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full opacity-70 animate-bounce"></div> */}
-                <div className="absolute -right-4 bottom-32 w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-70 animate-bounce"></div>
+                <div className="absolute -md:right-4 right-3 bottom-32 w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-70 animate-bounce"></div>
                 <div className="absolute left-8 bottom-16 w-8 h-8 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-60 animate-ping"></div>
               </div>
             </div>

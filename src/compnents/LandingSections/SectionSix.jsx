@@ -88,7 +88,7 @@ export default function SectionSix() {
             {/* Left Content */}
             <div className="relative z-20 w-full">
                  {/* Large Headline */}
-              <h1 className="text-5xl  md:text-8xl xl:text-9xl font-black text-black leading-relaxed mb-8 lg:mb-12">
+              <h1 className="text-5xl  md:text-8xl xl:text-9xl font-black text-black  mb-8 lg:mb-12">
                 Ready to
                 <br />
                 grow?
@@ -170,7 +170,7 @@ export default function SectionSix() {
             </div>
 
             {/* Right Content - Phone Image */}
-            <div className="absolute -bottom-7 z-30 md:right-0 -right-4 top-14 justify-center lg:justify-end">
+            <div className="absolute -bottom-7 z-30 md:right-0 -right-4 md:top-0 top-14 justify-center lg:justify-end">
               <div className="relative">
                 {/* Phone Image */}
                 <div className="relative transform hover:scale-105 hover:rotate-2 transition-all duration-500">

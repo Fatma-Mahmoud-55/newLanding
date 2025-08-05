@@ -88,7 +88,7 @@ export default function SectionSix() {
             {/* Left Content */}
             <div className="relative z-20 w-full">
                  {/* Large Headline */}
-              <h1 className="text-5xl  md:text-8xl xl:text-9xl font-black text-black leading-none mb-8 lg:mb-12">
+              <h1 className="text-5xl  md:text-8xl xl:text-9xl font-black text-black leading-relaxed mb-8 lg:mb-12">
                 Ready to
                 <br />
                 grow?
@@ -97,7 +97,7 @@ export default function SectionSix() {
               
               {/* Purple Card */}
               <div className="relative w-full">
-                <div className="w-full relative bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF]  rounded-3xl p-8 lg:p-10 md:mt-auto mt-16 md:h-auto h-[650px] text-white relative overflow-hidden">
+                <div className="w-full relative bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF]  rounded-3xl p-5 md:p-10 md:mt-auto mt-16 md:h-auto h-[650px] text-white  overflow-hidden">
                   {/* Background pattern/texture */}
                   <div className="absolute opacity-10">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full transform translate-x-16 -translate-y-16"></div>
@@ -107,7 +107,7 @@ export default function SectionSix() {
                   <div className="relative z-10 sm:w-6/12 sm:pt-20 pt-1 h-full flex flex-col justify-end ">
                 
                   
-                    <h2 className="text-xl lg:text-2xl font-bold mb-4">
+                    <h2 className="text-2xl font-bold mb-4">
                       Invest in your future your way
                     </h2>
                     <p className="text-gray-300 mb-8 text-sm lg:text-lg opacity-90">

@@ -170,7 +170,7 @@ export default function SectionSix() {
             </div>
 
             {/* Right Content - Phone Image */}
-            <div className="absolute -bottom-7 z-30 md:right-0 -right-4 top-8 justify-center lg:justify-end">
+            <div className="absolute -bottom-7 z-30 md:right-0 -right-4 top-14 justify-center lg:justify-end">
               <div className="relative">
                 {/* Phone Image */}
                 <div className="relative transform hover:scale-105 hover:rotate-2 transition-all duration-500">

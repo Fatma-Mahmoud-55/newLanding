@@ -60,12 +60,12 @@ const PortfolioInsights = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className={`text-3xl lg:text-5xl font-semibold  text-gray-900 leading-tight transition-all duration-1000 ease-out ${
+          <h1 className={`text-3xl lg:text-5xl   text-gray-900  transition-all duration-1000 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '0.4s' }}>
-            <span className="transition-colors duration-300">Know when to act</span>
-            <br />
-            <span className="transition-colors duration-300">or relax.</span>
+            <span className="transition-colors duration-300">Know when to act or relax.</span>
+            {/* <br />
+            <span className="transition-colors duration-300"></span> */}
           </h1>
           
           {/* Description */}

@@ -58,13 +58,13 @@ const FeatureCard = ({
     // If icon is an imported image (default, named, or string path)
     else if (icon) {
       return (
-        <div className="w-32 h-32 md:w-36 md:h-36 flex items-center justify-center">
+        <div className="w-26 h-26 md:w-32 md:h-32 flex items-center justify-center">
           <Image 
             src={icon} 
             alt={title} 
             className="w-full h-full object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             priority
           />
         </div>
@@ -90,12 +90,12 @@ const FeatureCard = ({
       <div className="absolute -top-10 -right-10 w-20 h-20 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full opacity-0 group-hover:opacity-30 transition-all duration-700 group-hover:scale-150 blur-xl"></div>
       
       <div className="relative z-10">
-        <div className={`   ${note?'md:mb-8 mb-1':'mb-8'}  transition-transform duration-500 group-hover:scale-105 ${note?'md:rotate-0 rotate-18':''}`}>
+        <div className={`   ${note?'md:mb-8 -mb-6 mt-10':'mb-8'}  transition-transform duration-500 group-hover:scale-105 ${note?'md:rotate-0 rotate-18':''}`}>
           {renderIcon()}
         </div>
         
         <div className="space-y-4 ">
-          <h3 className="text-xl md:text-2xl  font-bold text-gray-900 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-blue-600 group-hover:bg-clip-text leading-tight">
+          <h3 className="text-xl md:text-2xl max-w-lg font-bold text-gray-900 transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-blue-600 group-hover:bg-clip-text leading-tight">
             {title}
           </h3>
           {subtitle && (
@@ -191,7 +191,7 @@ const SectionTwo = () => {
   ];
 
   return (
-    <div  className=" md:pt-32 pt-10  overflow-hidden w-full">
+    <div  className=" md:pt-10 pt-10  overflow-hidden w-full">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -215,8 +215,8 @@ const SectionTwo = () => {
       </div>
       
       {/* Features Grid */}
-      <div className="max-w-7xl mx-auto px-6 pb-16 relative mt-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3">
+      <div className="max-w-7xl mx-auto px-6 pb-16 relative mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.id}

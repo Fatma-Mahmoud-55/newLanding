@@ -53,19 +53,19 @@ const SectionFour = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-screen relative ">
       {/* Background overlay */}
       <div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20"></div>
       
       {/* Main content container */}
-      <div className="relative z-10 w-full min-h-screen bg-white overflow-hidden lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]">
+      <div className="relative z-10 w-full min-h-screen bg-white md:pb-32 pb-auto overflow-hidden lg:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="absolute md:-mr-60 mr-0 md:bottom-32 md:top-auto top-20 transform flex justify-end">
+          <div className="absolute md:-mr-60 mr-0 md:bottom-12 md:top-auto top-20 transform flex justify-end">
             <img 
               src="/ring.png" 
               alt="ring" 
-              className="md:w-6/12 w-full animate-spin"
+              className="md:w-9/12 w-full animate-spin"
               style={{
                 animation: 'spin 60s linear infinite'
               }}
@@ -76,7 +76,7 @@ const SectionFour = () => {
         {/* Content - Main Section */}
         <div 
           ref={mainRef}
-          className={`relative z-20 max-w-7xl mx-auto p-4 grid md:grid-cols-2 mg:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
+          className={`relative z-20 max-w-7xl mx-auto p-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
             isVisible.main 
               ? 'opacity-100 transform translate-y-0' 
               : 'opacity-0 transform translate-y-12'
@@ -115,10 +115,10 @@ const SectionFour = () => {
         {/* Cards Section */}
         <div 
           ref={cardsRef}
-          className="relative z-20 max-w-7xl mx-auto p-4 flex md:flex-row flex-col md:gap-10 gap-5 h-full"
+          className="relative  z-20 max-w-7xl mx-auto p-4 flex md:flex-row flex-col md:gap-6 gap-5 h-fit justify-center"
         > 
           <div 
-            className={`w-fit h-full col-span-1 border border-gray-200 rounded-2xl bg-white transition-all duration-1000 delay-200 ease-out ${
+            className={`md:w-fit w-full h-auto col-span-1 border border-gray-200 rounded-2xl bg-white transition-all duration-1000 delay-200 ease-out ${
               isVisible.cards 
                 ? 'opacity-100 transform translate-y-0 scale-100' 
                 : 'opacity-0 transform translate-y-12 scale-95'
@@ -128,7 +128,7 @@ const SectionFour = () => {
           </div>
           
           <div 
-            className={`h-full w-fit col-span-1 border border-gray-200 rounded-2xl bg-white transition-all duration-1000 delay-400 ease-out ${
+            className={`h-auto md:w-fit w-full col-span-1 border border-gray-200 rounded-2xl bg-white transition-all duration-1000 delay-400 ease-out ${
               isVisible.cards 
                 ? 'opacity-100 transform translate-y-0 scale-100' 
                 : 'opacity-0 transform translate-y-12 scale-95'

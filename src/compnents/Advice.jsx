@@ -9,7 +9,7 @@ export default function Advice() {
 
   return (
     // <div className="max-w-md mx-auto p-6 bg-white">
-    <div className=" mx-auto p-6">
+    <div className="max-w-lg w-full mx-auto md:p-6 p-3">
       {/* Main heading */}
       <h1 className="text-3xl md:text-start text-center text-gray-900 mb-3 leading-tight">
         Get advice that actually makes sense
@@ -26,24 +26,24 @@ export default function Advice() {
       </p>
 
       {/* Try asking section */}
-      <div className="mb-6 md:w-8/12 w-full  mx-auto ">
+      <div className="mb-6 md:w-9/12 w-full  mx-auto ">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">
           Try asking
         </h2>
 
         {/* Cards container */}
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mb-4">
+        <div className="grid grid-cols-2  sm:gap-3 gap-2 mb-4">
           {/* First card */}
           <button
             onClick={() => handleCardClick("Help me build my first investment portfolio")}
-            className="p-4 rounded-2xl bg-gradient-to-br from-pink-200 via-purple-200 to-orange-200 text-left hover:scale-105 transition-transform duration-200 shadow-sm"
+            className="p-3 rounded-2xl bg-gradient-to-br from-pink-200 via-purple-200 to-orange-200 text-left hover:scale-105 transition-transform duration-200 shadow-sm"
           >
             <div className="flex items-start mb-2">
-              <span className="text-purple-600 text-lg">
+              <span className="">
                 <img src='/stars.png' alt='stars'/>
               </span>
             </div>
-            <p className="text-gray-800 text-sm  leading-snug">
+            <p className="text-gray-800 sm:text-sm  text-xs leading-snug">
               Help me build my first investment portfolio
             </p>
           </button>
@@ -51,15 +51,15 @@ export default function Advice() {
           {/* Second card */}
           <button
             onClick={() => handleCardClick("What's a good strategy for long-term growth?")}
-            className="p-4 rounded-2xl bg-gradient-to-br from-purple-200 via-purple-300 to-purple-200 text-left hover:scale-105 transition-transform duration-200 shadow-sm"
+            className="p-3 rounded-2xl bg-gradient-to-br from-purple-200 via-purple-300 to-purple-200 text-left hover:scale-105 transition-transform duration-200 shadow-sm"
           >
             <div className="flex items-start mb-2">
-              <span className="text-purple-600 text-lg">
+              <span className="">
                                 <img src='/stars.png' alt='stars'/>
 
               </span>
             </div>
-            <p className="text-gray-800 text-sm  leading-snug">
+            <p className="text-gray-800 sm:text-sm  text-xs  leading-snug">
               What's a good strategy for long-term growth?
             </p>
           </button>

@@ -179,7 +179,7 @@ You stay in control. We just make it easier... Much easier.
                 onClick={() => toggleAccordion(index)}
                 className={`w-full px-6 py-5 text-left font-medium hover:bg-gray-50  transition-all duration-300 ${
                   openIndex === index 
-                    ? 'bg-gradient-to-r from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] text-white shadow-sm' 
+                    ? 'bg-gradient-to-r from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] text-white' 
                     : 'text-gray-900 group-hover:bg-gray-50'
                 }`}
               >
@@ -200,7 +200,7 @@ You stay in control. We just make it easier... Much easier.
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
                 openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
               }`}>
-                <div className={`px-6 pb-6 transition-all duration-300   pt-5 ${
+                <div className={`px-6 pb-6 transition-all duration-300   ${
                   openIndex === index ? 'bg-gradient-to-r from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] text-white' : ''
                 }`}>
                   <div className={`md:text-sm text-xs leading-relaxed transform transition-all duration-500 ${

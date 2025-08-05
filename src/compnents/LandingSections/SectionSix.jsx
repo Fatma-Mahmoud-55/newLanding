@@ -170,17 +170,18 @@ export default function SectionSix() {
                         />
                         <button 
                           type="submit"
-                          disabled={isLoading || !email.trim()}
+                          // disabled={isLoading || !email.trim()}
                           className="right-0 absolute bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center space-x-2"
                         >
                           {isLoading ? (
                             <>
-                              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                              <div className="w-4 h-4 border-2 border-white sborder-t-transparent rounded-full animate-spin"></div>
                               <span>Joining...</span>
                             </>
-                          ) : (
-                            <span>Join waitlist</span>
-                          )}
+                          ) : (<> 
+                          <span className='hidden md:block'>Join waitlist</span>
+                          <span className='md:hidden block'>Join</span>
+                             </>)}
                         </button>
                       </div>
                     </form>

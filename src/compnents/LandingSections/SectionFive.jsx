@@ -14,11 +14,13 @@ const SectionFive = () => {
       question: "🧠 Do I need to know anything about investing?",
       answer: (
         <div className="space-y-1">
-          <p className="opacity-90">Not at all — that's exactly what finc is here for.</p>
+          <p className="opacity-90">Not at all! That’s exactly what finc is here for.</p>
           <p className="opacity-90">Whether you want to:</p>
           <p className="opacity-90">Let us handle everything with fully automated, expertly managed portfolios, or</p>
-          <p className="opacity-90">Take the lead yourself using smart tools, clear insights, and expert guidance or both — finc adapts to you.</p>
-          <p className="opacity-90">We simplify the complex. No finance degree. No confusing charts. No stress. Just intelligent investing - your way.</p>
+          <p className="opacity-90">Take the lead yourself using smart tools, clear insights, and expert guidance or
+both - finc adapts to you.</p>
+          <p className="opacity-90">We simplify the complex. No finance degree. No confusing charts. No stress.
+Just intelligent investing, your way.</p>
         </div>
       )
     },
@@ -29,12 +31,13 @@ const SectionFive = () => {
 
 
           <p className="opacity-90"></p>
-          <p className="opacity-90">You can start with just EGP 500 in your automated portfolio - fully managed by finc’s advanced algorithms, AI models and financial experts</p>
+          <p className="opacity-90">You can start with just EGP 500 in your automated portfolio - fully managed by finc’s advanced algorithms, AI models and financial experts.</p>
           <p className="opacity-90">We also offer multiple tiers based on how involved you want to be.</p>
-          <p className="opacity-90">From Beginner (free) for market access and insights, to Growth for a mix of automation</p>
-          <p className="opacity-90">
-            tailored advice and strong support tools like fincr score, all the way to Wealth+ - built for those who want powerful advanced tools to research, build, and manage portfolios on their own.
-          </p>
+          <p className="opacity-90">Every tier includes smart, automated investing powered by our algorithms and tailored to your goals.</p>
+          <p className="opacity-90">From Beginner (free) for market access and insights, to Growth for a mix of automation,   tailored advice and strong support tools like fincr score, all the way to Wealth+ - built for those who want powerful advanced tools to research, build, and manage portfolios on their own.</p>
+
+          
+
 
         </div>
       )
@@ -44,8 +47,8 @@ const SectionFive = () => {
       answer: (
         <div className="space-y-1">
           <p className="opacity-90">We’ve got your back.</p>
-          <p className="opacity-90">finc diversifies your portfolio and adjusts based on your risk profile - automatically. It’s like </p>
-          <p className="opacity-90">having a money brain that doesn’t panic.</p>
+          <p className="opacity-90">finc diversifies your portfolio and adjusts based on your risk profile - automatically.</p>
+          <p className="opacity-90">It’s like having a money brain that doesn’t panic.</p>
         </div>
       )
     },
@@ -53,7 +56,7 @@ const SectionFive = () => {
       question: "🕊 Can I withdraw anytime?",
       answer: (
         <div className="space-y-1">
-          <p className="opacity-90">Absolutely</p>
+          <p className="opacity-90"> Absolutely. </p>
           <p className="opacity-90">It’s your money. Take it out whenever you want — no lock-ins, no exit fees, no guilt trips.</p>
         </div>
       )
@@ -62,7 +65,7 @@ const SectionFive = () => {
       question: "💸 How does finc make money?",
       answer: (
         <div className="space-y-1">
-          <p className="opacity-90">We believe in radical transparency.</p>
+          <p className="opacity-90">We believe in radical transparency. </p>
           <p className="opacity-90"> 
 finc charges only transaction fees and a small management fee on the money you let us manage for you (for every EGP20k we manage - we take EGP100 annually) — and that’s it.</p>
           <p className="opacity-90">We also offer three clear subscription tiers with extra features to empower you to go deeper, track smarter, and even manage your own portfolio(s) if you want to.</p>
@@ -95,7 +98,7 @@ We use bank-grade encryption, secure servers, and strict regulatory compliance t
 
           <p className="opacity-90"> 
             Not at all.<br/>
-            finc uses AI to empower you - and our team - not replace anyone.Think: smarter decisions, less guesswork, better outcomes
+            finc uses AI to empower you - and our team - not replace anyone. <br/> Think: smarter decisions, less guesswork, better outcomes.
           </p>
           <p className="opacity-90"> 
             Behind the tech, we’ve got real industry experts and investment professionals making sure everything stays sharp, safe, and aligned with your goals.
@@ -114,8 +117,7 @@ You stay in control. We just make it easier... Much easier.
             We’re launching soon and aitlist members get early access!
             </p>
           <p className="opacity-90">
-            Join now to unlock early access, special perks, and updates as we roll out.<br/>
-            Spots are limited, but your future isn’t.
+            Join now to unlock early access, special perks, and updates as we roll out. <br/> Spots are limited, but your future isn’t.
           </p>
         </div>
       )

@@ -202,10 +202,10 @@ You stay in control. We just make it easier... Much easier.
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
                 openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
               }`}>
-                <div className={`px-6 pb-6 transition-all duration-300   ${
+                <div className={`px-6 pb-6 transition-all duration-300  -mt-3 ${
                   openIndex === index ? 'bg-gradient-to-r from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] text-white' : ''
                 }`}>
-                  <div className={`md:text-sm text-xs leading-relaxed transform transition-all duration-500 ${
+                  <div className={`md:text-sm text-xs leading-relaxed transform pt-4 transition-all duration-500 ${
                     openIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
                   }`}>
                     {item.answer}

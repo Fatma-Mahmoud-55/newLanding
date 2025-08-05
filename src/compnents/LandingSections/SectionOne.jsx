@@ -28,9 +28,9 @@ export default function SectionOne() {
         />
       </div>
       <div className="w-full mx-auto relative lg:pl-12 pl-0 z-10">
-        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-start min-h-screen py-10">
+        <div className="grid lg:grid-cols-2 w-full md:gap-16 gap-6 items-start  py-10">
           {/* Left Content */}
-          <div className="space-y-1 px-4 order-2 md:order-1 lg:pl-32  flex flex-col   h-full pt-32">
+          <div className="space-y-1 md:px-4 px-10 order-2 md:order-1 lg:pl-32  flex flex-col   h-full md:pt-50 pt-1">
             {/* Subheading */}
             <div data-aos="fade-right" data-aos-delay="400">
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight ">

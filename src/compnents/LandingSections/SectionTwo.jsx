@@ -191,7 +191,7 @@ const SectionTwo = () => {
   ];
 
   return (
-    <div  className=" md:pt-10 pt-10  overflow-hidden w-full">
+    <div  className="md:pt-1  pt-10 overflow-hidden w-full">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>

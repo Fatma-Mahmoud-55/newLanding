@@ -79,7 +79,7 @@ export default function SectionSix() {
   return (
     <div className="relative ">
       {/* Background blur div - positioned behind the main container */}
-      <div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20 -z-10"></div>
+      <div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20 hidden md:block -z-10"></div>
       
       <div className="min-h-screen bg-white relative z-10 border-t border-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] flex items-center justify-center px-4 pb-4 lg:pt-32 pt-4 lg:pb-8 lg:px-8">
         <div className="max-w-6xl mx-auto w-full">

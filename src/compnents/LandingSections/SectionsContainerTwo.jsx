@@ -17,7 +17,7 @@ export default function SectionsContainerTwo() {
         </div>
                 </section>
         
-        <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white opacity-20"></div>
+        <div className="w-full py-8 bg-gradient-to-t from-purple-900 to-white  hidden md:block opacity-20"></div>
       </div>
       
       <style jsx>{`

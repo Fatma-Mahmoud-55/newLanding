@@ -68,13 +68,13 @@ const Footer = () => {
           {/* Links row */}
           <div className="flex items-center justify-between">
             <a 
-              href="/privacy" 
+              href="#" 
               className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
             >
               Privacy Policy
             </a>
             <a 
-              href="/terms" 
+              href="#" 
               className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
             >
               Terms of use

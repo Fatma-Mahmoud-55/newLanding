@@ -16,7 +16,7 @@ export default function SectionsContainerTwo() {
             src='/vector2.png' 
             alt="vector2" 
            
-            className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-44 w-44 z-[60] -top-[8.25rem] -left-[3rem]  absolute object-contain "
+            className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-32 w-32 z-[60] md:-top-[8.25rem] -top-[3.2rem] md:-left-[3rem] -left-6  absolute object-contain "
           />
           <section id="faq" >
         <div className="relative z-10">

@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "finc",
     images: [
       {
-        url: "/iphonee.png",
+        url: "https://finc.me/iphonee.png",
         width: 1200,
         height: 630,
         alt: "Finc - Invest Smarter",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "finc",
     description: "Invest smarter. Stress less. Be a fincr.",
-    images: ["/iphonee.png"], 
+    images: ["https://finc.me/iphonee.png"], 
   },
 };
 

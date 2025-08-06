@@ -95,12 +95,12 @@ export default function Hero() {
         </div>
 
         {/* Content container */}
-        <div className="relative z-10   px-4 sm:px-6 lg:px-8 md:pt-0 pt-32 h-full flex justify-end items-end">
+        <div className="relative z-10   px-4 sm:px-6 lg:px-12 md:pt-0 pt-32 h-full flex justify-end items-end">
           <div className="grid lg:grid-cols-2 items-end w-full ">
             {/* Left content */}
                   <div className="text-white animate-fade-in flex flex-col justify-center lg:pb-20 pb-8 lg:justify-start ">
               <div className="space-y-1 mb-6">
-                <h1 className="text-[2.7rem] md:text-6xl xl:text-7xl font-bold sm:leading-none leading-12 ">
+                <h1 className="text-[2.7rem] md:text-7xl xl:text-8xl font-bold sm:leading-none leading-12 ">
                   <span className="block animate-slide-in-left">Invest smarter.</span>
                   <span className="block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Stress less.</span>
                   <span className="block  bg-clip-text text-white animate-slide-in-left" style={{ animationDelay: '0.4s' }}>

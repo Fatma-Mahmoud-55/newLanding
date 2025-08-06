@@ -33,7 +33,7 @@ export default function SectionOne() {
           <div className="space-y-1 md:px-4 px-10 order-2 md:order-1 lg:pl-32  flex flex-col   h-full md:pt-50 pt-1">
             {/* Subheading */}
             <div data-aos="fade-right" data-aos-delay="400">
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight ">
+              <h2 className="text-3xl  sm:text-5xl lg:text-6xl font-semibold mb-4 leading-tight ">
                 finc flips the script
               </h2>
             </div>

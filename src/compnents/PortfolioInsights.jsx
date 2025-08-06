@@ -60,7 +60,7 @@ const PortfolioInsights = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className={`text-3xl lg:text-5xl   text-gray-900  transition-all duration-1000 ease-out ${
+          <h1 className={`text-3xl lg:text-5xl  font-bold   text-gray-900  transition-all duration-1000 ease-out ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '0.4s' }}>
             <span className="transition-colors duration-300">Know when to act or relax.</span>
@@ -73,7 +73,7 @@ const PortfolioInsights = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`} style={{ transitionDelay: '0.6s' }}>
            
-            <p className="">
+          <p className="text-gray-500 text-sm md:text-lg leading-relaxed">
               Cut through the noise.<br/>
               Our smart insights show you what's happening and what matters to you so you're always in control.
             </p>

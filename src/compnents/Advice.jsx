@@ -12,7 +12,7 @@ export default function Advice() {
     <div className="max-w-lg w-full mx-auto md:p-6 p-3">
       <div className='w-full order-2 md:order-1'>
            {/* Main heading */}
-      <h1 className="text-3xl  text-gray-900 mb-3 leading-tight">
+      <h1 className="text-3xl  text-gray-900 mb-3 leading-tight font-bold">
         Get advice that actually makes sense
       </h1>
 

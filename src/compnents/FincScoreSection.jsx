@@ -23,7 +23,7 @@ const FincScoreSection = ({icon , title , desc}) => {
       )}
    
       {/* Main heading */}
-      <h2 className="text-2xl md:text-4xl md:font-normal font-semibold mb-6 ">
+      <h2 className="text-2xl md:text-4xl  font-bold mb-6 ">
         {title}
       </h2>
       

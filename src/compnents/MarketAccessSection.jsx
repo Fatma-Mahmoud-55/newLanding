@@ -69,8 +69,9 @@ export default function MarketAccessSection() {
                   </h1>
                 </div>
 
-                {/* Subtext */}
-                <div className="text-lg text-gray-600 max-w-md ">
+                {/* Subtext */}          
+
+                <div className="text-gray-500 text-sm md:text-lg leading-relaxed max-w-md ">
                   From local to global markets go big, stay small, or balance both. It's your call.
                 </div>
               </div>

@@ -80,9 +80,9 @@ const Header = () => {
                       className="w-10 h-10 object-contain transform group-hover:scale-110 hover:-rotate-12 transition-transform duration-300"
                     />
                   </div>
-                  <span className="hidden md:block text-3xl font-light tracking-wide text-gray-900 dark:text-white">
+                  {/* <span className="hidden md:block text-3xl font-light tracking-wide text-gray-900 dark:text-white">
                     finc
-                  </span>
+                  </span> */}
                 </div>
               </a>
             </div>

@@ -60,8 +60,9 @@ export default function MarketAccessSection() {
                 </div>
 
                 {/* Main Heading */}
+                {/* text-xl md:text-2xl max-w-lg font-bold text-gray-900  */}
                 <div>
-                  <h1 className="text-3xl md:text-4xl  md:font-normal  font-semibold text-gray-900 leading-tight">
+                  <h1 className="text-3xl md:text-4xl    font-bold text-gray-900 leading-tight">
                     Access local &
                     <br />
                     global markets.

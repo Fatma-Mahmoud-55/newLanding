@@ -116,10 +116,21 @@ const SectionFour = () => {
         {/* Desktop Layout */}
         <div className="absolute inset-0 hidden md:block">
           <div className="absolute md:-mr-60 mr-0 md:bottom-12 md:top-auto top-20 transform flex justify-end z-20">
+             {/* <img 
+              src="/ring.png" 
+              alt="ring" 
+              className="md:w-9/12 w-full animate-spin"
+              style={{
+                animation: 'spin 60s linear infinite'
+              }}
+            /> */}
             <img 
               src="/ring.png" 
               alt="ring" 
-              className={`md:w-9/12 w-full animate-fade-in-right delay-100 ${isVisible ? 'spin-slow' : ''}`}
+              className={`md:w-9/12 w-full  delay-100  animate-spin ${isVisible ? ' animate-spin' : ' animate-spin'}`}
+               style={{
+                animation: 'spin 60s linear infinite'
+              }}
             />
           </div>
           
@@ -150,7 +161,10 @@ const SectionFour = () => {
             <img 
               src="/ring.png" 
               alt="ring" 
-              className={`w-full animate-fade-in-up delay-100 ${isVisible ? 'spin-slow' : ''}`}
+              className={`w-full  animate-spin delay-100 `}
+             style={{
+                animation: 'spin 60s linear infinite'
+              }}
             />
           </div>
         </div>

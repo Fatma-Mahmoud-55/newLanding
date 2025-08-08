@@ -93,7 +93,7 @@ const SectionFour = () => {
         {/* Content - Main Section */}
         <div 
           ref={mainRef}
-          className={`relative z-30 max-w-7xl mx-auto p-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
+          className={`relative z-30 max-w-7xl mx-auto px-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
             isVisible.main 
               ? 'opacity-100 transform translate-y-0' 
               : 'opacity-0 transform translate-y-12'
@@ -126,11 +126,11 @@ const SectionFour = () => {
         </div>
         {/* Background Image */}
         <div className="absolute inset-0 md:hidden block">
-          <div className="absolute -mr-60 md:bottom-12 top-auto  transform flex justify-end">
+          <div className="absolute -mr-60  -top-14  transform flex justify-end">
             <img 
               src="/ring.png" 
               alt="ring" 
-              className="w-11/12  animate-spin"
+              className="w-full  animate-spin"
               style={{
                 animation: 'spin 60s linear infinite'
               }}

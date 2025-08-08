@@ -93,7 +93,7 @@ export default function SectionThree() {
           </div>
 
           {/* Grid Section */}
-          <div className='grid lg:grid-cols-3 gap-5 pb-16 relative mt-6'>
+          <div className='grid lg:grid-cols-3 gap-5 md:pb-16 pb-7 relative mt-6'>
             {/* Market Access Section */}
             <div 
               ref={marketAccessRef}

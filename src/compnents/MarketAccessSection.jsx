@@ -116,7 +116,7 @@ export default function MarketAccessSection() {
                 </div>
 
                 {/* Bottom Row - EGX70 and EGX100 */}
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   
                   {/* EGX70 Card */}
                   <div className="bg-gradient-to-br shadow-xl from-white via-[#D5C3E9B2] to-white rounded-2xl p-4  relative overflow-hidden">

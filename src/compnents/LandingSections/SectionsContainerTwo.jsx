@@ -8,21 +8,21 @@ export default function SectionsContainerTwo() {
     <>
       <div className=''>
         {/* Background gradient div positioned absolutely behind content */}
-        <div className="absolute md:w-72 w-40 md:h-32 h-40 z-0 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div>
         <SectionFour/>
         {/* Content with higher z-index to appear in front */}
-              <div className="relative z-10" id="features">
+              <div className="relative z-10"  id="faq" >
+        {/* <div className="absolute md:w-72 w-40 md:h-32 h-40 z-0 inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 scale-125 animate-pulse"></div> */}
           <img 
             src='/vector2.png' 
             alt="vector2" 
            
             className="md:w-60 md:h-60 sm:h-52 sm:w-52 h-32 w-32 z-[60] md:-top-[8.25rem] -top-[3.2rem] md:-left-[3rem] -left-6  absolute object-contain "
           />
-          <section id="faq" >
+          {/* <section id="faq" > */}
         <div className="relative z-10">
             <SectionFive />
         </div>
-          </section>
+          {/* </section> */}
         </div>
           
         

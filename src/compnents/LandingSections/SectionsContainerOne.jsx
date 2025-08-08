@@ -9,10 +9,10 @@ export default function SectionsContainerOne() {
     <>
       <div className=' w-full   overflow-x-hidden'>
         {/* Background gradient div positioned absolutely behind content */}
-        <div className="absolute md:w-72 w-20 md:h-32 h-40 -left-10 -top-10 -z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120 md:p-40 p-32"></div>
         
         {/* Content with higher z-index to appear in front */}
         <div className="relative overflow-x-hidden z-10">
+        {/* <div className="absolute md:w-72 w-20 md:h-32 h-40 -left-10 -top-10 z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120 md:p-40 p-32"></div> */}
           <SectionOne/>
         <div className="relative z-10" id="how-it-works">
              <section  >

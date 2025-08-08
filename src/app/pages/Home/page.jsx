@@ -11,6 +11,8 @@ export default function Page() {  // Changed to default export and PascalCase
     <>
     <div className="w-full">
        <Hero />
+               <div className="absolute md:w-72 w-20 md:h-32 h-40 -left-20 -bottom-70 -z-10 bg-gradient-to-r from-[#7F5AF0] to-[#9F80FF] rounded-full blur-3xl opacity-50 scale-120 md:p-40 p-32"></div>
+
        <SectionsContainerOne />
        <SectionsContainerTwo />
        <SectionSix />

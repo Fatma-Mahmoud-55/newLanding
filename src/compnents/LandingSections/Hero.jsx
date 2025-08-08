@@ -83,9 +83,9 @@ export default function Hero() {
         <div className="absolute inset-0">
           {/* Main gradient overlay */}
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(46, 13, 71, 0.6), transparent)' }}></div>
-          
+          {/*  */}
           {/* Floating orbs */}
-          <div className="absolute top-0 left-5 w-80 h-80 rounded-full blur-xl animate-pulse" style={{  background: 'rgba(244, 114, 182, 0.15)' }}></div>
+          <div className="absolute top-0 -left-10 w-80 h-80 rounded-full blur-xl animate-pulse" style={{  background: 'rgba(244, 114, 182, 0.15)' }}></div>
           <div className="absolute top-40 right-20 w-48 h-48 rounded-full blur-2xl animate-bounce" style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>
           <div className="absolute bottom-1  right-1/4 w-90 h-90  rounded-full blur-2xl animate-bounce" 
        style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>
@@ -95,7 +95,7 @@ export default function Hero() {
         </div>
 
         {/* Content container */}
-        <div className="relative z-10   px-4 sm:px-6 lg:px-16 md:pt-0 pt-32 h-full flex justify-end items-end">
+        <div className="relative z-10   px-4 sm:px-6 lg:px-16 md:pt-6 pt-32 h-full flex justify-end items-end">
           <div className="grid lg:grid-cols-2 items-end w-full  ">
             {/* Left content */}
                   <div className="text-white  animate-fade-in flex flex-col justify-center lg:pb-20 pb-8 lg:justify-end  ">
@@ -136,13 +136,13 @@ Get early access. Limited spots. Your future’s waiting.
                 <img 
                   src="/Mockup.png" 
                   alt="Finc mobile app mockup" 
-                  className="h-full  lg:pt-40 pt-0 w-auto object-contain drop-shadow-2xl"
+                  className="h-full  lg:pt-32 pt-0 w-auto object-contain drop-shadow-2xl"
                   style={{ maxHeight: '100vh' }}
                 />
                 {/* Optional glow effect behind the image */}
-                <div className="absolute inset-0 -z-10 blur-3xl opacity-30" style={{ 
+                {/* <div className="absolute inset-0 -z-10 blur-3xl opacity-30" style={{ 
                   background: 'radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent 70%)'
-                }}></div>
+                }}></div> */}
               </div>
             </div>
           </div>

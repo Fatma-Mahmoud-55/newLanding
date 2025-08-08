@@ -6,9 +6,9 @@ import RealTime from "../RealTime";
 
 const SectionFour = () => {
   const [isVisible, setIsVisible] = useState({
-    main: false,
-    phones: false,
-    cards: false
+    main: true,
+    phones: true,
+    cards: true
   });
   
   const mainRef = useRef(null);

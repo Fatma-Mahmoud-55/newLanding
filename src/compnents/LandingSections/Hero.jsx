@@ -98,7 +98,7 @@ export default function Hero() {
         <div className="relative z-10   px-4 sm:px-6 lg:px-16 md:pt-6 pt-32 h-full flex justify-end items-end">
           <div className="grid lg:grid-cols-2 items-end w-full  ">
             {/* Left content */}
-                  <div className="text-white  animate-fade-in flex flex-col justify-center lg:pb-20 pb-8 lg:justify-end  ">
+                  <div className="text-white md:px-0 px-5 animate-fade-in flex flex-col justify-center lg:pb-20 pb-8 lg:justify-end  ">
               <div className="space-y-1 mb-6">
                 <h1 className="text-[2.7rem] md:text-7xl xl:text-8xl font-bold sm:leading-none leading-12 ">
                   <span className="block animate-slide-in-left">Invest smarter.</span>
@@ -118,7 +118,7 @@ finc makes growing your money smart, easy and stress-free..
               <div className="animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
                 <button 
                   onClick={() => setIsModalOpen(true)}
-                  className="group relative px-6 sm:px-8 md:w-auto w-full py-3 sm:py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 active:scale-95 mx-auto lg:mx-0 block lg:inline-block"
+                  className="group relative px-6 sm:px-8 md:w-auto w-full py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 active:scale-95 mx-auto lg:mx-0 block lg:inline-block"
                 >
                   <span className="relative z-10 text-white">Join the waitlist</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

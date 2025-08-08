@@ -53,16 +53,14 @@ const SectionFour = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen relative ">
+    <div className="w-full min-h-screen relative">
       {/* Background overlay */}
       <div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20"></div>
 
-
-
-      
       {/* Main content container */}
-      <div className="relative z-10 w-full min-h-screen bg-white md:pb-32 pb-auto overflow-hidden md:rounded-b-[50px] md:rounded-b-[30px] rounded-b-[25px]">
-         <div className="absolute inset-0 hidden md:block">
+      <div className="relative z-10 w-full min-h-screen bg-white md:pb-32 pb-auto overflow-hidden md:rounded-b-[50px] rounded-b-[25px]">
+        {/* Desktop Layout */}
+        <div className="absolute inset-0 hidden md:block">
           <div className="absolute md:-mr-60 mr-0 md:bottom-12 md:top-auto top-20 transform flex justify-end z-20">
             <img 
               src="/ring.png" 
@@ -79,7 +77,7 @@ const SectionFour = () => {
             className={`md:w-md w-full h-fit absolute top-1/4 lg:left-[25rem] left-[16rem] transform -translate-x-1/2 -translate-y-1/2 z-10 transition-all duration-1200 delay-200 ease-out ${
               isVisible.main 
                 ? 'opacity-100 transform -translate-x-1/2 -translate-y-1/2' 
-                : 'opacity-0 transform  -translate-y-1/2 translate-x-8'
+                : 'opacity-0 transform -translate-y-1/2 translate-x-8'
             }`}
           >
             <FincScoreSection 
@@ -90,20 +88,14 @@ const SectionFour = () => {
           </div>
         </div>
         
-        {/* Content - Main Section */}
+        {/* Desktop Content - Main Section */}
         <div 
           ref={mainRef}
-          className={`relative  md:block hidden z-30 max-w-7xl mx-auto px-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
-            isVisible.main 
-              ? 'opacity-100 transform translate-y-0' 
-              : 'opacity-0 transform translate-y-12'
-          }`}
+          className="relative hidden md:block z-30 max-w-7xl mx-auto px-4 h-full pt-20"
         > 
-   
-          
           <div 
             ref={phonesRef}
-            className={`w-full h-full flex justify-end order-2 transition-all duration-1200 delay-400 ease-out ${
+            className={`w-full h-full flex justify-end transition-all duration-1200 delay-400 ease-out ${
               isVisible.phones 
                 ? 'opacity-100 transform translate-y-0 scale-100' 
                 : 'opacity-0 transform translate-y-8 scale-95'
@@ -112,17 +104,18 @@ const SectionFour = () => {
             <img 
               src="/2iphones.png" 
               alt="iphones" 
-              className="h-[90%]"
+              className="h-[80vh] max-h-[600px] w-auto object-contain"
             />
           </div>
         </div>
-        {/* -------------------------------------------------Background Image mobile----------------------------------------------*/}
+
+        {/* Mobile Layout */}
         <div className="absolute inset-0 md:hidden block">
-          <div className="absolute -mr-60  -top-14  transform flex justify-end">
+          <div className="absolute -mr-60 -top-14 transform flex justify-end">
             <img 
               src="/ring.png" 
               alt="ring" 
-              className="w-full  animate-spin"
+              className="w-full animate-spin"
               style={{
                 animation: 'spin 60s linear infinite'
               }}
@@ -130,38 +123,22 @@ const SectionFour = () => {
           </div>
         </div>
         
-        {/* Content - Main Section */}
+        {/* Mobile Content - Main Section */}
         <div 
-          ref={mainRef}
-          className={`relative z-20  md:hidden max-w-7xl mx-auto p-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
+          className={`relative z-20 md:hidden max-w-7xl mx-auto p-4 grid grid-cols-1 gap-4 h-full transition-all duration-1000 ease-out ${
             isVisible.main 
               ? 'opacity-100 transform translate-y-0' 
               : 'opacity-0 transform translate-y-12'
           }`}
         > 
           <div 
-            className={`md:w-md w-full h-fit order-2 md:order-1 my-auto transition-all duration-1200 delay-200 ease-out ${
-              isVisible.main 
-                ? 'opacity-100 transform translate-x-0' 
-                : 'opacity-0 transform -translate-x-8'
-            }`}
-          >
-            <FincScoreSection 
-              icon={false}
-              title="fincr - your smart money buddy"
-              desc="Ask anything. Learn everything.No confusion. No complexity. Just answers you actually understand and trust."
-            />            
-          </div>
-          
-          <div 
-            ref={phonesRef}
-            className={`w-full h-full flex justify-center order-1 md:order-2 transition-all duration-1200 delay-400 ease-out ${
+            className={`w-full h-full flex justify-center transition-all duration-1200 delay-400 ease-out ${
               isVisible.phones 
                 ? 'opacity-100 transform translate-y-0 scale-100' 
                 : 'opacity-0 transform translate-y-8 scale-95'
             }`}
           >
-             {/* Back iPhone with slide-in from left animation */}
+            {/* Back iPhone with slide-in from left animation */}
             <img 
               src="/backIphone.png" 
               alt="back iphone" 
@@ -183,12 +160,25 @@ const SectionFour = () => {
               }`}
             />
           </div>
+               <div 
+            className={`w-full h-fit my-auto transition-all duration-1200 delay-200 ease-out ${
+              isVisible.main 
+                ? 'opacity-100 transform translate-x-0' 
+                : 'opacity-0 transform -translate-x-8'
+            }`}
+          >
+            <FincScoreSection 
+              icon={false}
+              title="fincr - your smart money buddy"
+              desc="Ask anything. Learn everything.No confusion. No complexity. Just answers you actually understand and trust."
+            />            
+          </div>
         </div>
 
         {/* Cards Section */}
         <div 
           ref={cardsRef}
-          className="relative  z-20 max-w-7xl mx-auto p-4 flex md:flex-row flex-col md:gap-6 gap-5 h-fit justify-center"
+          className="relative z-20 max-w-7xl mx-auto p-4 flex md:flex-row flex-col md:gap-6 gap-5 h-fit justify-center"
         > 
           <div 
             className={`md:w-fit w-full h-auto col-span-1 border border-gray-200 rounded-2xl bg-white transition-all duration-1000 delay-200 ease-out ${
@@ -216,7 +206,6 @@ const SectionFour = () => {
 };
 
 export default SectionFour;
-
 
 
 

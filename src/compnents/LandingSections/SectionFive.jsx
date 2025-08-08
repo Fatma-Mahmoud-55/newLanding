@@ -114,7 +114,7 @@ You stay in control. We just make it easier... Much easier.
       answer: (
         <div className="space-y-1">
           <p className="opacity-90">
-            We’re launching soon and aitlist members get early access!
+            We’re launching soon and waitlist members get early access!
             </p>
           <p className="opacity-90">
             Join now to unlock early access, special perks, and updates as we roll out. <br/> Spots are limited, but your future isn’t.

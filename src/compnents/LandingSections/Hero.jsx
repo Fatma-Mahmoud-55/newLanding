@@ -85,7 +85,7 @@ export default function Hero() {
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(46, 13, 71, 0.6), transparent)' }}></div>
           {/*  */}
           {/* Floating orbs */}
-          <div className="absolute top-0 -left-10 w-80 h-80 rounded-full blur-xl animate-pulse" style={{  background: 'rgba(244, 114, 182, 0.15)' }}></div>
+          <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full blur-xl animate-pulse" style={{  background: 'rgba(244, 114, 182, 0.15)' }}></div>
           <div className="absolute top-40 right-20 w-48 h-48 rounded-full blur-2xl animate-bounce" style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>
           <div className="absolute bottom-1  right-1/4 w-90 h-90  rounded-full blur-2xl animate-bounce" 
        style={{ background: 'rgba(244, 114, 182, 0.15)', animationDuration: '3s' }}></div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FincScoreSection = ({icon , title , desc}) => {
+const FincScoreSection = ({icon , title , desc , desc2}) => {
   return (
     <div className="bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] rounded-2xl p-8 text-white h-full">
       {/* Placeholder for image - you can replace this div with your image */}
@@ -30,6 +30,7 @@ const FincScoreSection = ({icon , title , desc}) => {
       {/* Description text */}
       <div className="md:space-y-3 space-y-1 md:text-lg text-md text-purple-200">
         {desc}
+      
         {/* <p className="text-lg l">
           Think of it like a fitness tracker but for stocks.
         </p>
@@ -37,6 +38,9 @@ const FincScoreSection = ({icon , title , desc}) => {
           We analyze key signals so you know exactly where a stock stands before making a move.
         </p> */}
       </div>
+  <div className="md:space-y-3 space-y-1 md:text-lg text-md text-purple-200">
+        {desc2}
+    </div>
     </div>
   );
 };

@@ -97,7 +97,7 @@ export default function SectionThree() {
             {/* Market Access Section */}
             <div 
               ref={marketAccessRef}
-              className={`rounded-xl lg:col-span-2 shadow-md border border-gray-200 md:py-10 py-5 transition-all duration-800 ease-out ${
+              className={`rounded-xl lg:col-span-2 shadow-md border border-gray-200  transition-all duration-800 ease-out ${
                 marketAccessVisible 
                   ? 'opacity-100 translate-x-0 scale-100' 
                   : 'opacity-0 -translate-x-8 scale-95'
@@ -118,7 +118,8 @@ export default function SectionThree() {
               <FincScoreSection 
                 icon={true}
                 title="Your finc Score = a stock's health check"
-                desc="Think of it like a fitness tracker but for stocks.We analyze key signals so you know exactly where a stock stands before making a move."
+                desc="Think of it like a fitness tracker but for stocks."
+                desc2=" We analyze key signals so you know exactly where a stock stands before making a move."              
               />
             </div>
           </div> 

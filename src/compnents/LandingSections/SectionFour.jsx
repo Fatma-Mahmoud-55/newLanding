@@ -93,25 +93,17 @@ const SectionFour = () => {
         {/* Content - Main Section */}
         <div 
           ref={mainRef}
-          className={`relative z-30 max-w-7xl mx-auto px-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
+          className={`relative  md:block hidden z-30 max-w-7xl mx-auto px-4 grid md:grid-cols-2 md:gap-1 gap-4 h-full transition-all duration-1000 ease-out ${
             isVisible.main 
               ? 'opacity-100 transform translate-y-0' 
               : 'opacity-0 transform translate-y-12'
           }`}
         > 
-          <div 
-            className={`md:w-md w-full h-fit order-2 md:order-1 my-auto transition-all duration-1200 delay-200 ease-out ${
-              isVisible.main 
-                ? 'opacity-100 transform translate-x-0' 
-                : 'opacity-0 transform -translate-x-8'
-            }`}
-          >
-            {/* This div is now empty as FincScoreSection moved to background */}
-          </div>
+   
           
           <div 
             ref={phonesRef}
-            className={`w-full md:block hidden h-full flex justify-center order-1 md:order-2 transition-all duration-1200 delay-400 ease-out ${
+            className={`w-full h-full flex justify-end order-2 transition-all duration-1200 delay-400 ease-out ${
               isVisible.phones 
                 ? 'opacity-100 transform translate-y-0 scale-100' 
                 : 'opacity-0 transform translate-y-8 scale-95'
@@ -124,7 +116,7 @@ const SectionFour = () => {
             />
           </div>
         </div>
-        {/* Background Image */}
+        {/* -------------------------------------------------Background Image mobile----------------------------------------------*/}
         <div className="absolute inset-0 md:hidden block">
           <div className="absolute -mr-60  -top-14  transform flex justify-end">
             <img 
@@ -169,15 +161,26 @@ const SectionFour = () => {
                 : 'opacity-0 transform translate-y-8 scale-95'
             }`}
           >
+             {/* Back iPhone with slide-in from left animation */}
             <img 
               src="/backIphone.png" 
-              alt="iphones" 
-              className="h-full w-44 -rotate-8 -mr-10"
+              alt="back iphone" 
+              className={`h-full w-44 -rotate-8 -mr-10 transition-all duration-1000 delay-600 ease-out ${
+                isVisible.phones 
+                  ? 'opacity-100 transform translate-x-0 -rotate-8' 
+                  : 'opacity-0 transform -translate-x-16 rotate-12'
+              }`}
             />
+            
+            {/* Front iPhone with slide-in from right animation */}
             <img 
               src="/frontIphone.png" 
-              alt="iphones" 
-              className="h-full w-44 rotate-10 -ml-12"
+              alt="front iphone" 
+              className={`h-full w-44 rotate-10 -ml-12 transition-all duration-1000 delay-800 ease-out ${
+                isVisible.phones 
+                  ? 'opacity-100 transform translate-x-0 rotate-10' 
+                  : 'opacity-0 transform translate-x-16 -rotate-12'
+              }`}
             />
           </div>
         </div>

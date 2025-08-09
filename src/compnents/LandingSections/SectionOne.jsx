@@ -24,7 +24,7 @@ export default function SectionOne() {
       <div className="w-full px-4 " data-aos="fade-up" data-aos-delay="200">
         <SectionTitle
           subTitle="IT WASN'T YOUR FAULT — UNTIL NOW"
-          title="You were never the problem. The system was."
+          title="You were never the problem. <br />The system was."
         />
       </div>
       <div className="w-full mx-auto relative lg:pl-12 pl-0 z-10">

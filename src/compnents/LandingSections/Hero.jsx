@@ -112,7 +112,7 @@ export default function Hero() {
               <p className="text-sm sm:text-lg md:text-xl text-gray-400 max-w-2xl  lg:mx-0 leading-relaxed mb-8 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
                 No finance degree? No problem.<br/>
 With Egypt’s first AI-powered investing -  <br/>
-finc makes growing your money smart, easy and stress-free..
+finc makes growing your money smart, easy and stress-free.
               </p>
               
               <div className="animate-slide-in-left" style={{ animationDelay: '0.8s' }}>

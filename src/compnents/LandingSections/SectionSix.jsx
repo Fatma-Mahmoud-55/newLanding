@@ -107,7 +107,7 @@ export default function SectionSix() {
                   <div className="relative z-10 sm:w-6/12 sm:pt-20 pt-1 h-full flex flex-col justify-end ">
                 
                   
-                    <h2 className="text-4xl font-bold mb-4">
+                    <h2 className="text-2xl lg:text-4xl font-bold mb-4">
                       Invest in your future your way
                     </h2>
                     <p className="text-gray-300 mb-8 text-sm lg:text-lg opacity-90">

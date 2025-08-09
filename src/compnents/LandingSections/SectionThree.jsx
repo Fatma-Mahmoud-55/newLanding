@@ -74,7 +74,12 @@ export default function SectionThree() {
         >
           <SectionTitle
             subTitle="FOR WHEN YOU WANT MORE CONTROL, WITHOUT THE CHAOS"
-            title="Take the lead - <br/> with the right tools"
+            // title="Take the lead - with the right tools"
+              title={
+                      <>
+                        Take the lead - <br /> with the right tools
+                      </>
+                    }
           />
         </div>
 

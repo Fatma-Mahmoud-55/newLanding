@@ -107,11 +107,11 @@ export default function SectionSix() {
                   <div className="relative z-10 sm:w-6/12 sm:pt-20 pt-1 h-full flex flex-col justify-end ">
                 
                   
-                    <h2 className="text-2xl font-bold mb-4">
+                    <h2 className="text-4xl font-bold mb-4">
                       Invest in your future your way
                     </h2>
                     <p className="text-gray-300 mb-8 text-sm lg:text-lg opacity-90">
-                      Join thousands of smart investors who are growing their wealth with our intelligent investment platform. Start with as little as $1 and watch your money work harder for you.
+                          Join thousands of future investors who are choosing clean, automated, and stress-free investing. We’ll help you grow your wealth with clarity, confidence, and purpose.
                     </p>
                     
                     {/* Success Message */}

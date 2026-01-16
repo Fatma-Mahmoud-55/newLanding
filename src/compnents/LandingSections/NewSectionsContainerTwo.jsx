@@ -15,10 +15,6 @@ export default function NewSectionsContainerTwo() {
         <>
             <div className=' w-full   overflow-x-hidden'>
 
-                <PoweredBy/>
-                {/*----------------------------------------------------------------*/}
-                <StepperSection/>
-                {/*----------------------------------------------------------------*/}
                 <MediaSection/>
                 {/*----------------------------------------------------------------*/}
                     <div className="relative z-20 w-full mx-auto p-4 flex md:flex-row flex-col md:gap-6 gap-5 h-fit justify-center">

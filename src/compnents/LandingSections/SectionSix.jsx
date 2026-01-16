@@ -79,7 +79,8 @@ export default function SectionSix() {
   return (
     <div className="relative ">
       {/* Background blur div - positioned behind the main container */}
-      <div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20 hidden md:block -z-10"></div>
+      {/*for first design */}
+      {/*<div className="absolute inset-0 w-full h-full bg-purple-900 opacity-20 hidden md:block -z-10"></div>*/}
       
       <div className="min-h-screen bg-white relative z-10 border-t border-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] flex items-center justify-center px-4 pb-4 lg:pt-32 pt-4 lg:pb-8 lg:px-8">
         <div className="max-w-6xl mx-auto w-full">
@@ -135,32 +136,62 @@ export default function SectionSix() {
                     )}
                     
                     {/* Email input */}
+                    {/*<form onSubmit={handleSubmit} className="relative">*/}
+                    {/*  <div className="flex bg-white rounded-full w-full shadow-lg">*/}
+                    {/*    <input */}
+                    {/*      type="email" */}
+                    {/*      value={email}*/}
+                    {/*      onChange={(e) => setEmail(e.target.value)}*/}
+                    {/*      placeholder="Enter your email" */}
+                    {/*      className="relative w-full bg-transparent text-gray-700 placeholder-gray-500 px-4 py-3 focus:outline-none font-medium text-sm"*/}
+                    {/*      disabled={isLoading}*/}
+                    {/*      required*/}
+                    {/*    />*/}
+                    {/*    <button */}
+                    {/*      type="submit"*/}
+                    {/*      // disabled={isLoading || !email.trim()}*/}
+                    {/*      className="right-0 absolute bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-orange-600*/}
+                    {/*       text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center space-x-2"*/}
+                    {/*    >*/}
+                    {/*      {isLoading ? (*/}
+                    {/*        <>*/}
+                    {/*          <div className="w-4 h-4 border-2 border-white sborder-t-transparent rounded-full animate-spin"></div>*/}
+                    {/*          <span>Joining...</span>*/}
+                    {/*        </>*/}
+                    {/*      ) : (<> */}
+                    {/*      <span className='hidden md:block'>Join waitlist</span>*/}
+                    {/*      <span className='md:hidden block'>Join</span>*/}
+                    {/*         </>)}*/}
+                    {/*    </button>*/}
+                    {/*  </div>*/}
+                    {/*</form>*/}
+                    {/* Email input */}
                     <form onSubmit={handleSubmit} className="relative">
-                      <div className="flex bg-white rounded-full w-full shadow-lg">
-                        <input 
-                          type="email" 
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          placeholder="Enter your email" 
-                          className="relative w-full bg-transparent text-gray-700 placeholder-gray-500 px-4 py-3 focus:outline-none font-medium text-sm"
-                          disabled={isLoading}
-                          required
+                      <div className="flex bg-white rounded-full w-full shadow-lg 1"> {/* added p-1 for slight padding around the button */}
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Enter here email"
+                            className="relative w-full bg-transparent text-gray-700 placeholder:text-gray-300 px-6 py-3 focus:outline-none font-medium text-sm"
+                            disabled={isLoading}
+                            required
                         />
-                        <button 
-                          type="submit"
-                          // disabled={isLoading || !email.trim()}
-                          className="right-0 absolute bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-orange-600
-                           text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center space-x-2"
+                        <button
+                            type="submit"
+                            className="right-0 relative bg-gradient-to-r from-[#BD24DF] to-[#26B1FB] hover:opacity-90
+       text-white font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center space-x-2"
                         >
                           {isLoading ? (
-                            <>
-                              <div className="w-4 h-4 border-2 border-white sborder-t-transparent rounded-full animate-spin"></div>
-                              <span>Joining...</span>
-                            </>
-                          ) : (<> 
-                          <span className='hidden md:block'>Join waitlist</span>
-                          <span className='md:hidden block'>Join</span>
-                             </>)}
+                              <>
+                                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                <span>Joining...</span>
+                              </>
+                          ) : (
+                              <>
+                                <span>Join the waitlist</span>
+                              </>
+                          )}
                         </button>
                       </div>
                     </form>

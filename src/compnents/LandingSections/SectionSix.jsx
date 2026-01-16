@@ -165,7 +165,7 @@ export default function SectionSix() {
                     {/*    </button>*/}
                     {/*  </div>*/}
                     {/*</form>*/}
-                    {/* Email input */}
+                    {/* Email input g*/}
                     <form onSubmit={handleSubmit} className="relative">
                       <div className="flex bg-white rounded-full w-full shadow-lg 1"> {/* added p-1 for slight padding around the button */}
                         <input

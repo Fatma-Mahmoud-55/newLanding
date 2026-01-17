@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SectionTitle from "@/compnents/SectionTitle";
 
 export default function PoweredBy() {
     useEffect(() => {
@@ -15,77 +16,79 @@ export default function PoweredBy() {
     }, []);
 
     return (
-        <section className="bg-white py-12 md:py-24 overflow-hidden">
-            <div className=" ml-10 pl-4 md:pl-6">
+        // overflow-x-hidden prevents horizontal scrollbars from the negative margin
+        <section className="bg-white py-20 overflow-x-hidden">
+            <div className="mx-auto max-w-7xl px-4 md:px-6">
 
-                {/* Top: Powered By Logo */}
-                <div
-                    className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 mb-16 md:mb-32"
-                    data-aos="fade-down"
-                >
-                    <h3 className="text-3xl md:text-5xl font-bold text-black tracking-tight text-center">
-                        Powered by
-                    </h3>
-                    <Image
-                        src="/PoweredBy.svg"
-                        alt="Partner Logo"
-                        width={192}
-                        height={80}
-                        className="w-32 md:w-48 h-auto object-contain"
+                {/* Branding & Main Title Section */}
+                <div data-aos="fade-up" className="flex flex-col items-center mb-16 md:mb-24">
+                    <div className="flex items-center gap-4 mb-8">
+                        <span className="text-xl md:text-2xl font-semibold text-gray-500">
+                            Powered by
+                        </span>
+                        <Image
+                            src="/PoweredBy.svg"
+                            alt="Partner Logo"
+                            width={160}
+                            height={60}
+                            className="sm:w-28 md:w-40 w-20 h-auto object-contain"
+                        />
+                    </div>
+
+                    <SectionTitle
+                        title={
+                            <>
+                                You were never the problem. <br className="hidden sm:block" />
+                                <span className="text-black">The system was.</span>
+                            </>
+                        }
                     />
                 </div>
 
-                {/* Center: Main Headline */}
-                <div
-                    className="text-center mb-20 md:mb-40"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                >
-                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black leading-[1.1] max-w-5xl mx-auto tracking-tight px-2">
-                        You were never the problem. <br className="hidden sm:block" />
-                        <span className="text-gray-400 sm:text-black">The system was.</span>
-                    </h2>
-                </div>
-
-                {/* Bottom Section: Split Content */}
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+                {/* Content Section: Grid Layout */}
+                <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
 
                     {/* Left: Text Content */}
-                    <div className="w-full lg:w-1/2 text-center lg:text-left lg:pl-12 order-2 lg:order-1">
-                        <div className='flex flex-col items-center justify-center'>
-                            <div data-aos="fade-right" data-aos-delay="400">
-                                <h2 className="text-3xl md:text-5xl lg:text-6xl  text-black mb-6 ml-5">
-                                    finc flips the script
-                                </h2>
-                            </div>
-                            <div data-aos="fade-right" data-aos-delay="600">
-                                <p className="text-base md:text-lg text-gray-600 max-w-md mx-auto lg:mx-0 leading-relaxed font-medium">
-                                    We built a platform that works for you.
-                                    No stress. No pressure. Just intelligent,
-                                    automated investing that finally makes sense.
-                                </p>
-                            </div>
-                        </div>
-
+                    <div
+                        className="order-1 text-center lg:text-left"
+                        data-aos="fade-right"
+                    >
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
+                            finc flips the script
+                        </h2>
+                        <p className="text-base md:text-lg text-gray-600 max-w-md mx-auto lg:mx-0 leading-relaxed font-medium">
+                            We built a platform that works for you.
+                            No stress. No pressure. Just intelligent,
+                            automated investing that finally makes sense.
+                        </p>
                     </div>
 
-                    {/* Right: Phone Image Container */}
-                    {/*
-                        Logic to hit the screen border:
-                        1. -mr-4 / -mr-6: Negates mobile container padding.
-                        2. lg:-mr-[calc((100vw-100%)/2)]: Negates the "auto" margin of the centered container on desktop.
-                    */}
+                    {/* Right: Image Container */}
                     <div
-                        className="w-full lg:w-1/2 flex justify-end order-1 lg:order-2 -mr-4 md:-mr-6 lg:-mr-[calc((100vw-100%)/2)]"
-                        data-aos="fade-left" data-aos-delay="800">
-                        <Image
-                            src="/PoweredByMobile.svg"
-                            alt="finc app interface"
-                            width={900}
-                            height={600}
-                            priority
-                            className="w-auto h-auto max-w-none max-h-[400px] md:max-h-[500px] object-right"
-                        />
+                        className="order-2 flex justify-end"
+                        data-aos="fade-left"
+                    >
+                        {/*
+                          Breakout Logic:
+                          - On mobile: -mr-4 negates the px-4 padding.
+                          - On tablet (md): -mr-6 negates the px-6 padding.
+                          - On large screens: -mr-[calc((100vw-1280px)/2+1.5rem)]
+                            calculates the margin outside the 7xl (1280px) container + padding.
+                        */}
+                        <div className="relative w-full flex justify-end
+                                      -mr-4 md:-mr-6
+                                      lg:-mr-[calc((100vw-1280px)/2+1.5rem)]">
+                            <Image
+                                src="/PoweredByMobile.svg"
+                                alt="finc app interface"
+                                width={900}
+                                height={600}
+                                priority
+                                // Removed max-h constraint on mobile to let it fill the width,
+                                // and used object-right to ensure it sticks to the edge.
+                                className="w-full h-auto max-w-[500px] md:max-w-none object-contain object-right"
+                            />
+                        </div>
                     </div>
 
                 </div>

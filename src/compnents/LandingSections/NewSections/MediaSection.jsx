@@ -38,13 +38,8 @@ export default function MediaSection() {
     }, []);
 
     return (
-        <section className="relative w-full overflow-x-hidden bg-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] border-t border-gray-100 py-12 md:py-20 lg:py-24">
-
-            {/* Background Decorative Blobs - Desktop only */}
-            <div className="hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none">
-                <div className="absolute top-1/4 -left-12 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-                <div className="absolute bottom-1/4 -right-12 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-            </div>
+        /* FIXED: Added overflow-hidden to prevent AOS elements from creating horizontal scroll */
+        <section className="bg-white py-12 md:py-20 lg:py-24 overflow-hidden">
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -62,7 +57,6 @@ export default function MediaSection() {
                 </div>
 
                 {/* 2. Top Grid: Chart and Brands */}
-                {/* IMPROVEMENT: Changed to flex-col on mobile and md:flex-row for desktop */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-5 mb-8 md:mb-12">
                     <div data-aos="fade-up" data-aos-delay="100" className="w-full md:w-7/12">
                         <ChartSection />
@@ -73,16 +67,12 @@ export default function MediaSection() {
                 </div>
 
                 {/* 3. Bottom Grid: Description Box and Phones */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-44 items-center">
+                {/* FIXED: Reduced gap on tablet to prevent content pushing outside bounds */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 xl:gap-44 items-center">
 
-                    {/* Left/Bottom: Styled Purple Card */}
-                    {/* IMPROVEMENT: Adjusted padding for mobile (py-10 px-6) vs desktop */}
+                    {/* Left: Styled Purple Card */}
                     <div data-aos="fade-right" className="order-2 lg:order-1 h-full flex flex-col justify-center">
-                        <div className="h-full py-10  md:py-16  lg:py-20  text-white relative overflow-hidden group ">
-                            {/* Decorative inner light */}
-                            {/*<div className="absolute -top-24 -left-24 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>*/}
-                            {/*<div className="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-400 opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>*/}
-
+                        <div className="h-full py-10 md:py-16 lg:py-20 text-white relative overflow-hidden group">
                             <div className="relative z-10">
                                 <FincScoreSection
                                     icon={false}
@@ -93,8 +83,7 @@ export default function MediaSection() {
                         </div>
                     </div>
 
-                    {/* Right/Top: The Two Phones Image */}
-                    {/* IMPROVEMENT: Scaled sizing for better mobile centering */}
+                    {/* Right: The Two Phones Image */}
                     <div data-aos="fade-left" className="order-1 lg:order-2 flex justify-center items-center">
                         <div className="relative w-full max-w-[280px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[550px] transition-transform duration-500 hover:scale-105">
                             <Image

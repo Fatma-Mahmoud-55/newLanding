@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SectionTitle from "@/compnents/SectionTitle";
 
 const steps = [
     {
@@ -41,39 +42,39 @@ export default function StepperSection() {
     }, []);
 
     return (
-        <section className="bg-white py-20  overflow-hidden">
-            <div className="container mx-auto max-w-7xl">
-
-                {/* Main Headline */}
-                <div
-                    className="text-center mb-16 md:mb-24"
-                    data-aos="fade-down"
-                >
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-black leading-tight tracking-tight">
-                        Let your money work - <br /> automatically
-                    </h2>
+        <section className="bg-white md:py-20 py-5 overflow-hidden">
+            <div className="mx-auto max-w-7xl px-4">
+                <div data-aos="fade-up">
+                    <SectionTitle
+                        title="Let your money work - automatically"
+                    />
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
 
-                    {/* Left: Phone Image */}
+                    {/* Left: Phone Image Container */}
                     <div
-                        className=" flex justify-center lg:justify-start"
+                        className="flex justify-center lg:justify-start px-8 md:px-0"
                         data-aos="fade-right"
                     >
-                        <div className=" w-full max-w-[850px] aspect-[4/5]">
+                        {/*
+                            Removed aspect-[4/5] and fill.
+                            Set a max-width and let the image height adjust automatically
+                        */}
+                        <div className="w-full max-w-[500px]">
                             <Image
                                 src="/newMobImg.svg"
                                 alt="finc app interface"
-                                fill
-                                className="object-contain"
+                                width={800}    // Original image width
+                                height={1000}  // Original image height (maintains 4:5 ratio)
+                                className="w-full md:h-[90vh] h-auto object-contain"
                                 priority
                             />
                         </div>
                     </div>
 
                     {/* Right: Vertical Stepper */}
-                    <div className="space-y-0"> {/* Changed space-y-12 to 0 to manage spacing via margins/padding inside the loop */}
+                    <div className="space-y-0">
                         {steps.map((step, index) => (
                             <div
                                 key={index}
@@ -83,22 +84,20 @@ export default function StepperSection() {
                             >
                                 {/* Left Column: Number and Dashed Line */}
                                 <div className="flex flex-col items-center">
-                                    {/* Step Number Box */}
                                     <div className={`
-                    flex-shrink-0 w-12 h-12 md:w-14 md:h-14 
-                    flex items-center justify-center 
-                    rounded-md text-xl font-bold border-2
-                    ${step.isFilled
+                                        flex-shrink-0 w-12 h-12 md:w-14 md:h-14 
+                                        flex items-center justify-center 
+                                        rounded-md text-xl font-bold border-2
+                                        ${step.isFilled
                                         ? 'bg-[#5B21B6] border-[#5B21B6] text-white'
                                         : 'bg-white border-[#5B21B6] text-[#5B21B6]'
                                     }
-                `}>
+                                    `}>
                                         {step.number}
                                     </div>
 
-                                    {/* Vertical Dashed Line - Only show if not the last item */}
                                     {index !== steps.length - 1 && (
-                                        <div className="w-0 h-full border-l-2 border-dashed border-gray-300 "></div>
+                                        <div className="w-0 h-full border-l-2 border-dashed border-gray-300"></div>
                                     )}
                                 </div>
 
@@ -114,7 +113,6 @@ export default function StepperSection() {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </section>

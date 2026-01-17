@@ -9,11 +9,20 @@ import StepperSection from "@/compnents/LandingSections/NewSections/StepperSecti
 export default function NewSectionsContainerOne() {
     return (
         <>
-            <div className=' w-full   overflow-x-hidden'>
-                {/* Background gradient div positioned absolutely behind content */}
+            {/* Added 'flex flex-col' and responsive gap/padding to ensure mobile looks professional */}
+            <div className='w-full overflow-x-hidden flex flex-col gap-y-12 md:gap-y-0 px-8 md:px-0'>
 
-                {/* Content with higher z-index to appear in front */}
+                {/*
+                   Content wrapper:
+                   - We keep PoweredBy and StepperSection inside.
+                   - On PC (md:), the padding is 0 to preserve your original design.
+                   - On Mobile, px-4 prevents content from touching the screen edges.
+                */}
+
                 <PoweredBy/>
+
+                {/* Added a spacer div or margin logic if needed,
+                    but usually, standardizing the container is safer */}
                 <StepperSection/>
             </div>
 
@@ -33,10 +42,14 @@ export default function NewSectionsContainerOne() {
         .animate-float {
           animation: float 8s ease-in-out infinite;
         }
+
+        /* Optimization for mobile animations: reduces movement to prevent jitter */
+        @media (max-width: 768px) {
+          .animate-float {
+            animation: float 10s ease-in-out infinite;
+          }
+        }
       `}</style>
         </>
     )
 }
-
-
-

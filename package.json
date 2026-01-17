@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/plots": "^2.6.8",
     "aos": "^2.3.4",
     "axios": "^1.11.0",
     "framer-motion": "^12.23.11",

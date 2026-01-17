@@ -25,7 +25,7 @@ const MediaCard = () => {
                 <motion.div
                     animate={{ x: [0, -1000] }}
                     transition={{
-                        duration: 20,
+                        duration: 50,
                         repeat: Infinity,
                         ease: "linear",
                     }}
@@ -40,7 +40,7 @@ const MediaCard = () => {
                 <motion.div
                     animate={{ x: [-1000, 0] }}
                     transition={{
-                        duration: 25,
+                        duration: 55,
                         repeat: Infinity,
                         ease: "linear",
                     }}
@@ -55,7 +55,7 @@ const MediaCard = () => {
                 <motion.div
                     animate={{ x: [0, -1000] }}
                     transition={{
-                        duration: 22,
+                        duration: 52,
                         repeat: Infinity,
                         ease: "linear",
                     }}

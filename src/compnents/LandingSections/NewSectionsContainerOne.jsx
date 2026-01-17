@@ -10,7 +10,7 @@ export default function NewSectionsContainerOne() {
     return (
         <>
             {/* Added 'flex flex-col' and responsive gap/padding to ensure mobile looks professional */}
-            <div className='w-full overflow-x-hidden flex flex-col gap-y-12 md:gap-y-0 px-8 md:px-0'>
+            <div className='w-full overflow-x-hidden flex flex-col gap-y-5 md:gap-y-0 '>
 
                 {/*
                    Content wrapper:
@@ -23,7 +23,8 @@ export default function NewSectionsContainerOne() {
 
                 {/* Added a spacer div or margin logic if needed,
                     but usually, standardizing the container is safer */}
-                <StepperSection/>
+                    <StepperSection/>
+
             </div>
 
             <style jsx>{`

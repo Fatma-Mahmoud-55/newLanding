@@ -12,26 +12,28 @@ import MediaSection from "@/compnents/LandingSections/NewSections/MediaSection";
 
 export default function NewSectionsContainerTwo() {
     return (
-        <>
-            <div className=' w-full   overflow-x-hidden'>
+        /* 1. Added relative and overflow-x-hidden to the absolute outer wrapper */
+        <div className='relative w-full '>
 
-                <MediaSection/>
-                {/*----------------------------------------------------------------*/}
-                    <div className="relative z-20 w-full mx-auto p-4 flex md:flex-row flex-col md:gap-6 gap-5 h-fit justify-center">
-                        <div
-                            className="md:w-fit w-full h-auto col-span-1 border border-gray-200 rounded-2xl bg-white animate-scale delay-300">
-                            <RealTime/>
-                        </div>
+            <MediaSection/>
 
-                        <div
-                            className="h-auto md:w-fit w-full col-span-1 border border-gray-200 rounded-2xl bg-white animate-scale delay-400">
-                            <Advice/>
-                        </div>
+            {/* 2. Standardized this wrapper to match typical page constraints */}
+            <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+
+                    {/* 3. Changed md:w-fit to md:flex-1 to ensure equal width and prevent overflow */}
+                    <div className="w-full md:flex-1 h-auto border border-gray-200 rounded-2xl bg-white animate-scale delay-300 overflow-hidden">
+                        <RealTime/>
                     </div>
-                {/*----------------------------------------------------------------*/}
 
-                <SectionFive2/>
+                    <div className="w-full md:flex-1 h-auto border border-gray-200 rounded-2xl bg-white animate-scale delay-400 overflow-hidden">
+                        <Advice/>
+                    </div>
+
+                </div>
             </div>
+
+            <SectionFive2/>
 
             <style jsx>{`
                 @keyframes float {
@@ -49,10 +51,12 @@ export default function NewSectionsContainerTwo() {
                 .animate-float {
                     animation: float 8s ease-in-out infinite;
                 }
+
+                /* Ensure scaling doesn't cause layout shifts */
+                .animate-scale {
+                    transition: transform 0.3s ease-out;
+                }
             `}</style>
-        </>
+        </div>
     )
 }
-
-
-

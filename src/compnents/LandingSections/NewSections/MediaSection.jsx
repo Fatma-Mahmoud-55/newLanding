@@ -17,7 +17,7 @@ export default function MediaSection() {
             duration: 1000,
             easing: 'ease-out-cubic',
             once: true,
-            disable: 'mobile' // Optional: improves performance on low-end mobile
+            disable: 'mobile'
         });
 
         const observer = new IntersectionObserver(
@@ -40,7 +40,7 @@ export default function MediaSection() {
     return (
         <section className="relative w-full overflow-x-hidden bg-white lg:rounded-t-[50px] md:rounded-t-[30px] rounded-t-[25px] border-t border-gray-100 py-12 md:py-20 lg:py-24">
 
-            {/* Background Decorative Blobs - Visible only on Desktop for performance */}
+            {/* Background Decorative Blobs - Desktop only */}
             <div className="hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none">
                 <div className="absolute top-1/4 -left-12 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
                 <div className="absolute bottom-1/4 -right-12 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -62,24 +62,26 @@ export default function MediaSection() {
                 </div>
 
                 {/* 2. Top Grid: Chart and Brands */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8 md:mb-12">
-                    <div data-aos="fade-up" data-aos-delay="100" className="w-full">
+                {/* IMPROVEMENT: Changed to flex-col on mobile and md:flex-row for desktop */}
+                <div className="flex flex-col md:flex-row gap-6 md:gap-5 mb-8 md:mb-12">
+                    <div data-aos="fade-up" data-aos-delay="100" className="w-full md:w-7/12">
                         <ChartSection />
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="200" className="w-full">
+                    <div data-aos="fade-up" data-aos-delay="200" className="w-full md:w-5/12">
                         <MediaCard />
                     </div>
                 </div>
 
                 {/* 3. Bottom Grid: Description Box and Phones */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-44 items-center">
 
-                    {/* Left: Styled Purple Card */}
+                    {/* Left/Bottom: Styled Purple Card */}
+                    {/* IMPROVEMENT: Adjusted padding for mobile (py-10 px-6) vs desktop */}
                     <div data-aos="fade-right" className="order-2 lg:order-1 h-full flex flex-col justify-center">
-                        <div className="h-full py-12 px-8 md:py-16 md:px-12 lg:py-20 rounded-[30px] bg-gradient-to-br from-[#6366f1] to-[#a855f7] text-white relative overflow-hidden group shadow-xl">
+                        <div className="h-full py-10  md:py-16  lg:py-20  text-white relative overflow-hidden group ">
                             {/* Decorative inner light */}
-                            <div className="absolute -top-24 -left-24 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>
-                            <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-400 opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>
+                            {/*<div className="absolute -top-24 -left-24 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>*/}
+                            {/*<div className="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-400 opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-all duration-700"></div>*/}
 
                             <div className="relative z-10">
                                 <FincScoreSection
@@ -91,9 +93,10 @@ export default function MediaSection() {
                         </div>
                     </div>
 
-                    {/* Right: The Two Phones Image */}
+                    {/* Right/Top: The Two Phones Image */}
+                    {/* IMPROVEMENT: Scaled sizing for better mobile centering */}
                     <div data-aos="fade-left" className="order-1 lg:order-2 flex justify-center items-center">
-                        <div className="relative w-full max-w-[320px] sm:max-w-[450px] lg:max-w-[550px] transition-transform duration-500 hover:scale-105">
+                        <div className="relative w-full max-w-[280px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[550px] transition-transform duration-500 hover:scale-105">
                             <Image
                                 src="/2iphones.png"
                                 alt="fincr app interface"

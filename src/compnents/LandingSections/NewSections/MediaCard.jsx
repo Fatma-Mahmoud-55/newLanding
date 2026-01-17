@@ -16,10 +16,10 @@ const MediaCard = () => {
     const row2 = [...logos, ...logos,...logos, ...logos];
 
     return (
-        <div className="relative overflow-hidden w-full h-[400px] bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] rounded-2xl flex items-center justify-center">
+        <div className="relative overflow-hidden w-full h-[420px] bg-gradient-to-br from-[#7F5AF0] via-[#9F80FF] to-[#CBB7FF] rounded-2xl flex items-center justify-center">
 
             {/* Container that stacks rows horizontally */}
-            <div className="flex flex-col gap-6 md:gap-6 transform -rotate-10 pt-44 scale-110 select-none pointer-events-none">
+            <div className="flex flex-col gap-6 md:gap-6 transform -rotate-10 md:pt-44 pt-10 scale-110 select-none pointer-events-none">
 
                 {/* Row 1 - Moving Right to Left */}
                 <motion.div
@@ -59,7 +59,7 @@ const MediaCard = () => {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className="hidden md:flex gap-4 "
+                    className="flex gap-4 "
                 >
                     {row1.map((src, index) => (
                         <LogoCard key={`row3-${index}`} src={src} />
@@ -76,7 +76,7 @@ const MediaCard = () => {
 
 // Sub-component: Transparent, smaller, and rounded
 const LogoCard = ({ src }) => (
-    <div className="w-16 h-16 md:w-24 md:h-24 flex-shrink-0 flex items-center justify-center overflow-hidden rounded-xl border border-white/20">
+    <div className="w-16  md:w-24 md:h-24 flex-shrink-0 flex items-center justify-center overflow-hidden rounded-xl border border-white/20">
         <img
             src={src}
             alt="Partner Logo"

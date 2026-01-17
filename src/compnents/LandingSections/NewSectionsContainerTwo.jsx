@@ -13,7 +13,7 @@ import MediaSection from "@/compnents/LandingSections/NewSections/MediaSection";
 export default function NewSectionsContainerTwo() {
     return (
         /* 1. Added relative and overflow-x-hidden to the absolute outer wrapper */
-        <div className='relative w-full '>
+        <div className=' '>
 
             <MediaSection/>
 

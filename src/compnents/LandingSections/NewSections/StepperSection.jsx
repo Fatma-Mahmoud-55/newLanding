@@ -1,8 +1,7 @@
 "use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 import SectionTitle from "@/compnents/SectionTitle";
 
 const steps = [
@@ -33,76 +32,89 @@ const steps = [
 ];
 
 export default function StepperSection() {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-out-cubic',
-            once: true,
-        });
-    }, []);
-
     return (
-        <section className="bg-white md:py-20 py-5 overflow-hidden">
+        <section className="bg-white md:py-24 py-12 overflow-hidden">
             <div className="mx-auto max-w-7xl px-4">
-                <div data-aos="fade-up">
-                    <SectionTitle
-                        title="Let your money work - automatically"
-                    />
-                </div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <SectionTitle title="Let your money work - automatically" />
+                </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
+                <div className="grid lg:grid-cols-2 gap-16 items-start mt-16">
 
-                    {/* Left: Phone Image Container */}
-                    <div
-                        className="flex justify-center lg:justify-start px-8 md:px-0"
-                        data-aos="fade-right"
-                    >
-                        {/*
-                            Removed aspect-[4/5] and fill.
-                            Set a max-width and let the image height adjust automatically
-                        */}
-                        <div className="w-full max-w-[500px]">
+                    {/* Left: Sticky Phone Image */}
+                    {/* 'sticky top-24' keeps the image in view as you scroll through the steps */}
+                    <div className="lg:sticky lg:top-24 flex justify-center lg:justify-start px-8 md:px-0">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="w-full max-w-[450px]"
+                        >
                             <Image
                                 src="/newMobImg.svg"
                                 alt="finc app interface"
-                                width={800}    // Original image width
-                                height={1000}  // Original image height (maintains 4:5 ratio)
-                                className="w-full md:h-[90vh] h-auto object-contain"
+                                width={800}
+                                height={1000}
+                                className="w-full h-auto object-contain"
                                 priority
                             />
-                        </div>
+                        </motion.div>
                     </div>
 
                     {/* Right: Vertical Stepper */}
-                    <div className="space-y-0">
+                    <div className="flex flex-col">
                         {steps.map((step, index) => (
-                            <div
+                            <motion.div
                                 key={index}
+                                // Each step triggers its own animation when it enters 30% of the viewport
+                                initial={{ opacity: 0.3, x: 30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ amount: 0.6, once: false }}
+                                transition={{ duration: 0.5, ease: "easeOut" }}
                                 className="flex items-stretch gap-6 md:gap-8 group"
-                                data-aos="fade-left"
-                                data-aos-delay={index * 200}
                             >
-                                {/* Left Column: Number and Dashed Line */}
+                                {/* Left Column: Number and Line */}
                                 <div className="flex flex-col items-center">
-                                    <div className={`
-                                        flex-shrink-0 w-12 h-12 md:w-14 md:h-14 
-                                        flex items-center justify-center 
-                                        rounded-md text-xl font-bold border-2
-                                        ${step.isFilled
-                                        ? 'bg-[#5B21B6] border-[#5B21B6] text-white'
-                                        : 'bg-white border-[#5B21B6] text-[#5B21B6]'
-                                    }
-                                    `}>
+                                    <motion.div
+                                        // Number pops when in view
+                                        initial={{ scale: 0.8 }}
+                                        whileInView={{ scale: 1 }}
+                                        className={`
+                                            flex-shrink-0 w-12 h-12 md:w-14 md:h-14 
+                                            flex items-center justify-center 
+                                            rounded-md text-xl font-bold border-2 z-10
+                                            ${step.isFilled
+                                            ? 'bg-[#5B21B6] border-[#5B21B6] text-white'
+                                            : 'bg-white border-[#5B21B6] text-[#5B21B6]'
+                                        }
+                                        `}
+                                    >
                                         {step.number}
-                                    </div>
+                                    </motion.div>
 
+                                    {/* Vertical Line Animation */}
                                     {index !== steps.length - 1 && (
-                                        <div className="w-0 h-full border-l-2 border-dashed border-gray-300"></div>
+                                        <div className="relative w-px h-full min-h-[100px] my-2">
+                                            <div className="absolute inset-0 border-l-2 border-dashed border-gray-200"></div>
+                                            <motion.div
+                                                className="absolute inset-0 border-l-2 border-dashed border-[#5B21B6]"
+                                                initial={{ height: 0 }}
+                                                whileInView={{ height: "100%" }}
+                                                viewport={{ amount: 0.5 }}
+                                                transition={{ duration: 0.8, delay: 0.2 }}
+                                            />
+                                        </div>
                                     )}
                                 </div>
 
-                                {/* Right Column: Step Text Content */}
-                                <div className={`flex-1 pt-1 md:pt-2 ${index !== steps.length - 1 ? 'pb-12 md:pb-16' : ''}`}>
+                                {/* Right Column: Text Content */}
+                                <div className={`flex-1 pt-1 md:pt-2 ${index !== steps.length - 1 ? 'pb-16 md:pb-24' : ''}`}>
                                     <h3 className="text-xl md:text-2xl font-bold text-black mb-3 leading-snug">
                                         {step.title}
                                     </h3>
@@ -110,7 +122,7 @@ export default function StepperSection() {
                                         {step.description}
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

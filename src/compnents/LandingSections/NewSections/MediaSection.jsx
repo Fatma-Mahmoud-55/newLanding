@@ -13,11 +13,13 @@ export default function MediaSection() {
     const headerRef = useRef(null);
 
     useEffect(() => {
+        // Updated AOS init: removed disable: 'mobile'
         AOS.init({
             duration: 1000,
             easing: 'ease-out-cubic',
             once: true,
-            disable: 'mobile'
+            offset: 50, // Triggers animation slightly earlier on mobile
+            disable: false // Ensures it runs on all devices
         });
 
         const observer = new IntersectionObserver(
@@ -38,9 +40,8 @@ export default function MediaSection() {
     }, []);
 
     return (
-        /* FIXED: Added overflow-hidden to prevent AOS elements from creating horizontal scroll */
-        <section className="bg-white py-12 md:py-20 lg:py-24 overflow-hidden">
-
+        /* overflow-x-hidden is crucial here to prevent side-scrolling during fade-in animations */
+        <section className="  ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* 1. Header Section */}
@@ -67,11 +68,15 @@ export default function MediaSection() {
                 </div>
 
                 {/* 3. Bottom Grid: Description Box and Phones */}
-                {/* FIXED: Reduced gap on tablet to prevent content pushing outside bounds */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 xl:gap-44 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 xl:gap-44 mt-16 md:mt-24 items-center">
 
                     {/* Left: Styled Purple Card */}
-                    <div data-aos="fade-right" className="order-2 lg:order-1 h-full flex flex-col justify-center">
+                    {/* Changed to fade-up for mobile compatibility, switches to fade-right on lg screens */}
+                    <div
+                        data-aos="fade-up"
+                        data-aos-md="fade-right"
+                        className="order-2 lg:order-1 h-full flex flex-col justify-center"
+                    >
                         <div className="h-full py-10 md:py-16 lg:py-20 text-white relative overflow-hidden group">
                             <div className="relative z-10">
                                 <FincScoreSection
@@ -84,7 +89,11 @@ export default function MediaSection() {
                     </div>
 
                     {/* Right: The Two Phones Image */}
-                    <div data-aos="fade-left" className="order-1 lg:order-2 flex justify-center items-center">
+                    <div
+                        data-aos="fade-up"
+                        data-aos-md="fade-left"
+                        className="order-1 lg:order-2 flex justify-center items-center"
+                    >
                         <div className="relative w-full max-w-[280px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[550px] transition-transform duration-500 hover:scale-105">
                             <Image
                                 src="/2iphones.png"

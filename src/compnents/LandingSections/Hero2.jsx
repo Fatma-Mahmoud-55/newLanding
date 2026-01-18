@@ -74,7 +74,7 @@ export default function Hero2() {
                     animate="animate"
                     className="relative z-20 flex flex-col items-center text-center max-w-6xl mx-auto px-6"
                 >
-                    <motion.div variants={fadeInUp} className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#000] mb-8">
+                    <motion.div variants={fadeInUp} className="text-4xl lg:text-6xl font-bold text-[#000] mb-8">
                         Intelligent wealth. Built for you.
                     </motion.div>
 

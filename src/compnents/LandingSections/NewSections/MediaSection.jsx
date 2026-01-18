@@ -41,7 +41,7 @@ export default function MediaSection() {
 
     return (
         /* overflow-x-hidden is crucial here to prevent side-scrolling during fade-in animations */
-        <section className="min-h-screen flex flex-col py-8 md:py-12">
+        <section className="min-h-screen flex flex-col pt-8 md:py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex-grow flex flex-col">
 
                 {/* 1. Header Section */}
@@ -78,7 +78,7 @@ export default function MediaSection() {
                         data-aos-md="fade-right"
                         className="lg:w-5/12 order-2 lg:order-1"
                     >
-                        <div className="h-full md:h-4/7 p-2 mt-20 md:p-3 lg:p-4 xl:p-6  group transition-all duration-500 flex flex-col">
+                        <div className="h-full md:h-4/7 p-2 md:mt-20 md:p-3 lg:p-4 xl:p-6  group transition-all duration-500 flex flex-col">
                             <div className="flex-grow flex flex-col justify-center ">
                                 <FincScoreSection
                                     icon={false}

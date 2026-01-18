@@ -91,7 +91,7 @@ const Footer = () => {
                 {/* Social media - Mobile */}
                 <div className="flex items-center gap-3">
                   <a
-                      href="https://www.instagram.com/fincfinancials?igsh=MTZwbHd0dDlubDNycg=="
+                      href="https://www.instagram.com/fincwealth?igsh=MWhla3o0YnBoNzNsbw%3D%3D&utm_source=qr"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative w-10 h-10 flex items-center justify-center"
@@ -111,7 +111,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                      href="https://www.linkedin.com/in/finc-financials-22851734a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                      href="https://www.linkedin.com/company/fincwealth/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative w-10 h-10 flex items-center justify-center"

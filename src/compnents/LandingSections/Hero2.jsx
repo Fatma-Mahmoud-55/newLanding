@@ -112,7 +112,7 @@ export default function Hero2() {
                         className="relative z-10 flex justify-center"
                     >
                         <img
-                            src="/newHeroImage.png"
+                            src="/newHeroImage.svg"
                             alt="Finc App Dashboard"
                             className="w-full max-w-[340px] md:max-w-[520px] md:mr-20 mr-5 h-auto drop-shadow-[0_40px_80px_rgba(0,0,0,0.25)]"
                         />

@@ -44,7 +44,7 @@ export default function RealTime() {
       </div>
 
       {/* Main heading */}
-      <h1 className="md:text-4xl text-3xl  text-gray-900 mb-6 font-bold leading-tight">
+      <h1 className="md:text-4xl text-3xl  text-gray-900 mb-6  md:w-9/12 leading-tight">
         Real-time tracking & alerts
       </h1>
 

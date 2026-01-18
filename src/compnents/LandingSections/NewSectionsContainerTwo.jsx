@@ -19,17 +19,16 @@ export default function NewSectionsContainerTwo() {
 
             {/* 2. Standardized this wrapper to match typical page constraints */}
             <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-
-                    {/* 3. Changed md:w-fit to md:flex-1 to ensure equal width and prevent overflow */}
-                    <div className="w-full md:flex-1 h-auto border border-gray-200 rounded-2xl bg-white animate-scale delay-300 overflow-hidden">
+                <div className="flex flex-col md:flex-row gap-3 justify-center items-stretch">
+                    <div
+                        className="w-full md:min-w-[35%] md:flex-1 h-auto border border-[#EAD4F0] rounded-2xl bg-white animate-scale delay-300 overflow-hidden">
                         <RealTime/>
                     </div>
 
-                    <div className="w-full md:flex-1 h-auto border border-gray-200 rounded-2xl bg-white animate-scale delay-400 overflow-hidden">
+                    <div
+                        className="w-full md:min-w-[65%] md:flex-2 h-auto border border-[#EAD4F0] rounded-2xl bg-white animate-scale delay-400 overflow-hidden">
                         <Advice/>
                     </div>
-
                 </div>
             </div>
 

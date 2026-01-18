@@ -16,7 +16,7 @@ const SectionFive2 = () => {
                 <div className="space-y-1">
                     <p className="opacity-90">Not at all! That’s exactly what finc is here for.</p>
                     <p className="opacity-90">Whether you want to:</p>
-                    <p className="opacity-90">Let us handle everything with fully automated, expertly managed portfolios, or</p>
+                    <p className="opacity-90">Let us handle everything with fully automated, expertly managed portfolios, executed by our licensed partner .</p>
                     <p className="opacity-90">Take the lead yourself using smart tools, clear insights, and expert guidance or
                         both - finc adapts to you.</p>
                     <p className="opacity-90">We simplify the complex. No finance degree. No confusing charts. No stress.
@@ -67,7 +67,7 @@ const SectionFive2 = () => {
                 <div className="space-y-1">
                     <p className="opacity-90">We believe in radical transparency. </p>
                     <p className="opacity-90">
-                        finc charges only transaction fees and a small management fee on the money you let us manage for you (for every EGP20k we manage - we take EGP100 annually) — and that’s it.</p>
+                        finc charges only transaction fees and a small management fee on the money you let us manage for you (for every EGP20k we manage - we take EGP200 annually) — and that’s it. <br/>Shared with Licensed AMC</p>
                     <p className="opacity-90">We also offer three clear subscription tiers with extra features to empower you to go deeper, track smarter, and even manage your own portfolio(s) if you want to.</p>
                     <p className="opacity-90">
 

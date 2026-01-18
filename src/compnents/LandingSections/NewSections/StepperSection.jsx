@@ -115,10 +115,10 @@ export default function StepperSection() {
 
                                 {/* Right Column: Text Content */}
                                 <div className={`flex-1 pt-1 md:pt-2 ${index !== steps.length - 1 ? 'pb-16 md:pb-24' : ''}`}>
-                                    <h3 className="text-xl md:text-2xl font-bold text-black mb-3 leading-snug">
+                                    <h3 className="text-xl md:text-3xl font-bold text-black mb-3 leading-snug">
                                         {step.title}
                                     </h3>
-                                    <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-md">
+                                    <p className="text-gray-600 text-base md:text-xl leading-relaxed max-w-md">
                                         {step.description}
                                     </p>
                                 </div>

@@ -73,13 +73,13 @@ const Header = () => {
             >
               <div className="flex items-center space-x-3">
                 <div className="relative">
-                  <div className='flex items-end'>
+                  <div className='flex items-end gap-3'>
                   <img
                       src='/Vector.png'
                       alt="finc logo"
                       className={`w-10 h-10 object-contain transform group-hover:scale-110 hover:-rotate-12 transition-transform duration-300 ${!isScrolled && !isOpen ? 'brightness-0' : ''}`}
                   />
-                  <h1 className={`text-2xl font-bold ${textColor}`}>finc</h1>
+                  <h1 className={`text-3xl  font-thin ${textColor}`}>finc</h1>
                     </div>
                 </div>
               </div>

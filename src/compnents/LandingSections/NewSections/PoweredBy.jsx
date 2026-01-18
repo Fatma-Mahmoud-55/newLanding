@@ -28,8 +28,8 @@ export default function PoweredBy() {
 
                 {/* Branding & Main Title Section */}
                 <div data-aos="fade-up" className="flex flex-col items-center mb-16 md:mb-24">
-                    <div className="flex items-center gap-4 mb-8">
-                        <span className="text-xl md:text-2xl font-semibold text-gray-500">
+                    <div className="flex items-center md:gap-10 gap-4 mb-8">
+                        <span className="text-xl md:text-5xl font-medium text-gray-800">
                             Powered by
                         </span>
                         <Image
@@ -37,7 +37,7 @@ export default function PoweredBy() {
                             alt="Partner Logo"
                             width={160}
                             height={60}
-                            className="sm:w-28 md:w-40 w-20 h-auto object-contain"
+                            className="sm:w-28 md:w-24 w-20 h-auto object-contain"
                         />
                     </div>
 

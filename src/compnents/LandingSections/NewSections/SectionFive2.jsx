@@ -31,7 +31,7 @@ const SectionFive2 = () => {
 
 
                     <p className="opacity-90"></p>
-                    <p className="opacity-90">You can start with just EGP 500 in your automated portfolio - fully managed by finc’s advanced algorithms, AI models and financial experts.</p>
+                    <p className="opacity-90">You can start with just EGP 500 in your automated portfolio, fully managed by finc’s advanced algorithms, AI models and financial experts.</p>
                     <p className="opacity-90">We also offer multiple tiers based on how involved you want to be.</p>
                     <p className="opacity-90">Every tier includes smart, automated investing powered by our algorithms and tailored to your goals.</p>
                     <p className="opacity-90">From Beginner (free) for market access and insights, to Growth for a mix of automation,   tailored advice and strong support tools like fincr score, all the way to Wealth+ - built for those who want powerful advanced tools to research, build, and manage portfolios on their own.</p>
